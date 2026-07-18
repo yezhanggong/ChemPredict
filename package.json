@@ -8,7 +8,7 @@
     "test:ui": "node \"04_模型源码/tests/test_ui_v44.cjs\""
   },
   "devDependencies": {
-    "playwright": "1.55.0"
+    "playwright": "1.61.1"
   },
   "engines": {
     "node": ">=22.13"
