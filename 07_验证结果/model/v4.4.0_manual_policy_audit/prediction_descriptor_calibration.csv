@@ -1,0 +1,27 @@
+﻿id,scope_group,prediction_descriptor_loo_euclidean,prediction_descriptor_loo_mahalanobis,authoritative_gate,note
+2a,naphthyl,0.4021473461783349,1.3362852149244477,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2b,naphthyl,0.4021473461783349,1.3229620727707427,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2c,naphthyl,0.7912934948831648,1.2845886075562403,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2d,alkyl_series,0.6612138696538739,1.0769598846824342,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2e,alkyl_series,0.6612138696538739,1.1632269756741862,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2f,alkyl_series,0.4607009645750923,0.5340343086318071,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2g,alkyl_series,0.4607009645750923,0.5340343086318071,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2h,para_edg,0.3946920362920852,0.6464793222250671,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2i,para_edg,0.3946920362920852,0.6464793222250671,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2j,biphenyl,0.7233879684543804,1.3361174986033868,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2k,biphenyl,0.851164278559099,1.2844380425619149,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2l,para_ewg,0.47143160001176415,0.912257493935004,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2m,para_ewg,0.920843939405771,1.0803361783662975,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2n,para_ewg,0.47143160001176415,0.912257493935004,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2o,para_halogen,0.8008052978842304,1.1517669510071518,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2p,para_halogen,0.8735900324209995,1.0610141309088839,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2q,para_halogen,0.8767807014560935,1.0610141309088839,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2r,meta_halogen,0.8735900324209995,1.0563810462967338,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2s,meta_halogen,0.8767807014560935,1.0563810462967338,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2t,ortho_halogen,0.569854076814391,1.0632571160607656,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2u,ortho_halogen,1.005869438512145,1.312463508813735,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2v,ortho_halogen,0.8008052978842304,1.0632571160607656,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2w,polyhalogen,0.6680803667813477,1.3200542343037007,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2x,polyhalogen,0.569854076814391,1.3213961540324604,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2y,polyhalogen,1.0201826232283442,1.322650541415921,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability
+2z,cyclic_benzylic,1.4371678316603103,1.3229735802869271,False,diagnostic only; authoritative gate remains on manual_core for v4.3 stability

@@ -1,0 +1,4 @@
+﻿check,record_ids,yield_range_pct,ee_range_pct,pass
+50/88 anchor duplicated across S1/S2/S3,SOLV-02;PC-01;CU-07,0.0,0.0,True
+90/90 anchor duplicated across S3/S4/S5,CU-05;LIG-01;TEMP-01,0.0,0.0,True
+optimized condition repeat at 0.2 mmol,OPT-01;REP-01,5.0,0.0,True

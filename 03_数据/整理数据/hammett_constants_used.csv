@@ -1,0 +1,13 @@
+substituent,position,sigma_value,primary_source_doi,use_in_scope_ids,comment
+Me,para,-0.17,10.1021/cr00002a004,2h,standard sigma_p
+OMe,para,-0.27,10.1021/cr00002a004,2i,standard sigma_p
+Ph,para,-0.01,10.1021/cr00002a004,2j;2k,standard sigma_p
+CO2Me,para,0.45,10.1021/cr00002a004,2l,standard sigma_p
+CF3,para,0.54,10.1021/cr00002a004,2m,standard sigma_p
+CN,para,0.66,10.1021/cr00002a004,2n,standard sigma_p
+F,para,0.06,10.1021/cr00002a004,2o,standard sigma_p
+Cl,para,0.23,10.1021/cr00002a004,2p;2w,standard sigma_p
+Br,para,0.23,10.1021/cr00002a004,2q;2y,standard sigma_p
+F,meta,0.34,10.1021/cr00002a004,2y,standard sigma_m
+Cl,meta,0.37,10.1021/cr00002a004,2r,standard sigma_m
+Br,meta,0.39,10.1021/cr00002a004,2s,standard sigma_m

@@ -1,0 +1,30 @@
+﻿record_id,screen_axis,candidate,yield_status,yield_pct,ee_pct,matched_anchor,delta_yield_pct,delta_ee_pct,source_table,source_pdf_page
+SOLV-01,solvent,CH3CN,measured,40.0,74.0,SOLV-02,-10.0,-14.0,Table S1,16
+SOLV-02,solvent,DCM,measured,50.0,88.0,SOLV-02,0.0,0.0,Table S1,16
+SOLV-03,solvent,DCE,measured,55.0,84.0,SOLV-02,5.0,-4.0,Table S1,16
+SOLV-04,solvent,CHCl3,measured,55.0,87.0,SOLV-02,5.0,-1.0,Table S1,16
+SOLV-05,solvent,PhCl,trace,,,SOLV-02,,,Table S1,16
+SOLV-06,solvent,acetone,trace,,,SOLV-02,,,Table S1,16
+SOLV-07,solvent,MTBE,trace,,,SOLV-02,,,Table S1,16
+PC-01,photocatalyst,fac-Ir(ppy)3,measured,50.0,88.0,PC-01,0.0,0.0,Table S2,16
+PC-02,photocatalyst,[Ir(dFCF3ppy)2(bpy)]PF6,trace,,,PC-01,,,Table S2,16
+PC-03,photocatalyst,4CzIPN,trace,,,PC-01,,,Table S2,16
+PC-04,photocatalyst,Eosin Y,not_detected,,,PC-01,,,Table S2,16
+PC-05,photocatalyst,"5,7,12,14-Pentacenetetrone",not_detected,,,PC-01,,,Table S2,16
+PC-06,photocatalyst,"9,10-Diphenylanthracene",not_detected,,,PC-01,,,Table S2,16
+CU-01,copper_source,CuBr,measured,82.0,88.0,CU-07,32.0,0.0,Table S3,17
+CU-02,copper_source,CuCl2,measured,47.0,88.0,CU-07,-3.0,0.0,Table S3,17
+CU-03,copper_source,CuBr2,measured,72.0,88.0,CU-07,22.0,0.0,Table S3,17
+CU-04,copper_source,CuCl,measured,80.0,87.0,CU-07,30.0,-1.0,Table S3,17
+CU-05,copper_source,CuCN,measured,90.0,90.0,CU-07,40.0,2.0,Table S3,17
+CU-06,copper_source,Cu(CH3CN)4BF4,measured,45.0,88.0,CU-07,-5.0,0.0,Table S3,17
+CU-07,copper_source,Cu(CH3CN)4PF6,measured,50.0,88.0,CU-07,0.0,0.0,Table S3,17
+LIG-01,ligand,L1,measured,90.0,90.0,LIG-01,0.0,0.0,Table S4,17
+LIG-02,ligand,L2,measured,70.0,47.0,LIG-01,-20.0,-43.0,Table S4,17
+LIG-03,ligand,L3,measured,50.0,37.0,LIG-01,-40.0,-53.0,Table S4,17
+LIG-04,ligand,L4,less_than_50,,0.0,LIG-01,,-90.0,Table S4,17
+LIG-05,ligand,L5,measured,50.0,25.0,LIG-01,-40.0,-65.0,Table S4,17
+LIG-06,ligand,L6,measured,50.0,25.0,LIG-01,-40.0,-65.0,Table S4,17
+TEMP-01,temperature,25,measured,90.0,90.0,TEMP-01,0.0,0.0,Table S5,18
+TEMP-02,temperature,0,measured,55.0,89.0,TEMP-01,-35.0,-1.0,Table S5,18
+TEMP-03,temperature,40,measured,92.0,90.0,TEMP-01,2.0,0.0,Table S5,18

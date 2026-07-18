@@ -1,0 +1,8 @@
+﻿validation,observed,predicted,lower,upper,global_lower,global_upper,interval_source,covered,version,absolute_error,risk_adjusted_lower
+nested_group_holdout,41.0,87.26751216593115,61.76848193545732,100.0,61.76848193545732,100.0,global_fallback,False,4.4.0,46.26751216593115,35.0
+fixed_selected_group_holdout,41.0,83.75002024366896,,,,,,,4.3.0,42.750020243668956,
+nested_group_holdout,41.0,86.20735289367137,,,,,,,4.3.0,45.20735289367137,
+mean_baseline_group_holdout,41.0,86.30434782608695,,,,,,,4.3.0,45.30434782608695,
+fixed_pipeline_group_holdout,41.0,83.71840951355223,,,,,,,4.0.0,42.71840951355223,
+nested_group_holdout,41.0,86.20735289367137,,,,,,,4.0.0,45.20735289367137,
+mean_baseline_group_holdout,41.0,86.30434782608695,,,,,,,4.0.0,45.30434782608695,

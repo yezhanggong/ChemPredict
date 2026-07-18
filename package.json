@@ -1,0 +1,16 @@
+{
+  "name": "chempredict",
+  "version": "4.4.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "description": "Browser acceptance tests for the ChemPredict research prototype",
+  "scripts": {
+    "test:ui": "node \"04_模型源码/tests/test_ui_v44.cjs\""
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

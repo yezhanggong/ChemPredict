@@ -1,0 +1,21 @@
+id,label,manual_smiles,scope_group,aryl_rings,fused_aromatic,cyclic_center,alpha_chain_carbons,ortho_sub_count,meta_sub_count,para_sub_count,hammett_sigma_mp,halogen_count,edg_count,ewg_count,sidechain_polar_count,design_rationale
+V01,2-phenylbutanenitrile,CCC(C#N)c1ccccc1,alkyl_interpolation,1,0,0,2,0,0,0,0,0,0,0,0,between 2d and 2e alkyl length
+V02,2-phenylpentanenitrile,CCCC(C#N)c1ccccc1,alkyl_interpolation,1,0,0,3,0,0,0,0,0,0,0,0,between 2d and 2e alkyl length
+V03,2-phenylhexanenitrile,CCCCC(C#N)c1ccccc1,alkyl_interpolation,1,0,0,4,0,0,0,0,0,0,0,0,between 2d and 2e alkyl length
+V04,2-(4-ethylphenyl)propanenitrile,CC(C#N)c1ccc(CC)cc1,para_edg_neighbour,1,0,0,1,0,0,1,-0.15,0,1,0,0,near p-Me 2h
+V05,2-(3-methylphenyl)propanenitrile,CC(C#N)c1cccc(C)c1,meta_edg_neighbour,1,0,0,1,0,1,0,-0.07,0,1,0,0,positional isomer near 2h
+V06,2-(2-methylphenyl)propanenitrile,CC(C#N)c1ccccc1C,ortho_edg_neighbour,1,0,0,1,1,0,0,0,0,1,0,0,ortho steric boundary
+V07,2-(4-iodophenyl)propanenitrile,CC(C#N)c1ccc(I)cc1,para_halogen_neighbour,1,0,0,1,0,0,1,0.18,1,0,1,0,halogen interpolation beyond F Cl Br
+V08,2-(3-fluorophenyl)propanenitrile,CC(C#N)c1cccc(F)c1,meta_halogen_neighbour,1,0,0,1,0,1,0,0.34,1,0,1,0,meta halogen interpolation
+V09,"2-(3,4-difluorophenyl)propanenitrile","CC(C#N)c1ccc(F)c(F)c1",polyhalogen_neighbour,1,0,0,1,0,1,1,0.40,2,0,1,0,between mono and polyhalogen examples
+V10,"2-(3,4-dichlorophenyl)propanenitrile","CC(C#N)c1ccc(Cl)c(Cl)c1",polyhalogen_boundary,1,0,0,1,0,1,1,0.60,2,0,1,0,strong EWG boundary expected to abstain
+V11,"2-(2,5-dichlorophenyl)propanenitrile","CC(C#N)c1cc(Cl)ccc1Cl",polyhalogen_neighbour,1,0,0,1,1,1,0,0.37,2,0,1,0,positional interpolation among 2w and 2x
+V12,"2-(2,4-difluorophenyl)propanenitrile","CC(C#N)c1ccc(F)cc1F",polyhalogen_neighbour,1,0,0,1,1,0,1,0.06,2,0,1,0,positional interpolation among halogens
+V13,2-(4-(trifluoromethoxy)phenyl)propanenitrile,CC(C#N)c1ccc(OC(F)(F)F)cc1,para_ewg_neighbour,1,0,0,1,0,0,1,0.35,3,0,1,1,electronic neighbour between halogen and ester
+V14,2-(4-(methylthio)phenyl)propanenitrile,CC(C#N)c1ccc(SC)cc1,para_edg_neighbour,1,0,0,1,0,0,1,0.00,0,1,0,1,polarizable para donor
+V15,2-(4-acetylphenyl)propanenitrile,CC(C#N)c1ccc(C(C)=O)cc1,para_ewg_neighbour,1,0,0,1,0,0,1,0.50,0,0,1,1,near ester and CF3 EWG region
+V16,4-(1-cyanoethyl)benzamide,CC(C#N)c1ccc(C(N)=O)cc1,para_ewg_neighbour,1,0,0,1,0,0,1,0.36,0,0,1,2,polar EWG near ester region
+V17,2-(6-fluoronaphthalen-2-yl)propanenitrile,CC(C#N)c1ccc2cc(F)ccc2c1,naphthyl_neighbour,2,1,0,1,0,0,0,0,1,0,1,0,naphthyl analogue of 2c
+V18,2-(6-(trifluoromethyl)naphthalen-2-yl)propanenitrile,CC(C#N)c1ccc2cc(C(F)(F)F)ccc2c1,naphthyl_boundary,2,1,0,1,0,0,0,0,3,0,1,0,naphthyl electronic boundary
+V19,"2-([1,1-biphenyl]-3-yl)propanenitrile",CC(C#N)c1cccc(-c2ccccc2)c1,biphenyl_neighbour,2,0,0,1,0,1,0,0,0,0,0,0,positional analogue of 2j
+V20,"2,3-dihydro-1H-indene-1-carbonitrile",N#CC1CCc2ccccc21,cyclic_benzylic_neighbour,1,1,1,0,0,0,0,0,0,0,0,0,ring-size neighbour of 2z

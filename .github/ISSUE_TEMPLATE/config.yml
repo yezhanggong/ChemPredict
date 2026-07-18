@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Research discussion
+    url: https://github.com/yezhanggong/ChemPredict/discussions
+    about: Discuss model structure, parameters, blind-test design, and reaction-system extensions.

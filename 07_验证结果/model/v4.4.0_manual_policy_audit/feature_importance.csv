@@ -1,0 +1,14 @@
+﻿target,feature_set,feature,importance
+ee,manual_expanded,aryl_rings,0.04894726350903511
+ee,manual_expanded,fused_aromatic,0.0
+ee,manual_expanded,cyclic_center,0.0
+ee,manual_expanded,alpha_chain_carbons,0.0
+ee,manual_expanded,ortho_sub_count,0.20069490373134613
+ee,manual_expanded,hammett_sigma_mp,0.06436476111412048
+ee,manual_expanded,sidechain_polar_count,0.21220669150352478
+ee,manual_expanded,meta_sub_count,0.0
+ee,manual_expanded,para_sub_count,0.1084510087966919
+ee,manual_expanded,halogen_count,0.1656237542629242
+ee,manual_expanded,edg_count,0.06837678700685501
+ee,manual_expanded,ewg_count,0.027552643790841103
+ee,manual_expanded,hammett_sigma_mp_x_para_sub_count,0.10378222912549973

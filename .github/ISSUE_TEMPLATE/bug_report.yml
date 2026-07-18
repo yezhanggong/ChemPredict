@@ -1,0 +1,48 @@
+name: Software bug
+description: Report a reproducible defect in the website, pipeline, or inference implementation.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: ChemPredict version
+      placeholder: v4.4.0 and, if available, the commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Web interface
+        - Python inference
+        - Training pipeline
+        - Data validation
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include inputs, commands, expected behavior, and observed behavior. Remove restricted data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Operating system, Python/Node versions, browser, and dependency versions
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I removed credentials, confidential structures, and personal information.
+          required: true
+        - label: I did not present a model prediction as an experimental measurement.
+          required: true

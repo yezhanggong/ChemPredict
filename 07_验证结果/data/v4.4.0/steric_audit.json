@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rows": 30,
+  "dbstep_version": "1.1.0",
+  "rdkit_version": "2025.09.6",
+  "semantics": "rdkit_etkdgv3_mmff_or_uff_product_scaffold_proxy_not_transition_state",
+  "ligand_status": "not computed because L1 has no machine-readable structure in the audited source table",
+  "missing_training_descriptors": 0
+}

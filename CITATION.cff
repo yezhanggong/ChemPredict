@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use ChemPredict, cite this software release and the original experimental article listed in the data card."
+title: "ChemPredict: an applicability-aware evidence and ranking tool for asymmetric radical cyanation"
+type: software
+version: 4.4.0
+date-released: 2026-07-19
+authors:
+  - name: "ChemPredict Contributors"
+repository-code: "https://github.com/yezhanggong/ChemPredict"
+url: "https://yezhanggong.github.io/ChemPredict/"
+license: Apache-2.0
+keywords:
+  - asymmetric catalysis
+  - radical cyanation
+  - chemoinformatics
+  - applicability domain
+  - uncertainty calibration
+preferred-citation:
+  type: software
+  title: "ChemPredict v4.4.0"
+  version: 4.4.0
+  date-released: 2026-07-19
+  authors:
+    - name: "ChemPredict Contributors"
+  repository-code: "https://github.com/yezhanggong/ChemPredict"
+  license: Apache-2.0
+references:
+  - type: article
+    title: "Deoxygenative Asymmetric Cyanation with P(OEt)3 Employing Cooperative Photoredox Catalysis and Copper Catalysis"
+    doi: "10.1021/acs.orglett.5c05116"

@@ -1,0 +1,157 @@
+﻿id,scope_group,observed,predicted,validation,target,selected_config,selection_reason
+2d,alkyl_series,86.0,74.38646020718366,fixed_selected_group_holdout,yield,,
+2e,alkyl_series,61.0,74.74671096466285,fixed_selected_group_holdout,yield,,
+2f,alkyl_series,74.0,73.09216403891271,fixed_selected_group_holdout,yield,,
+2g,alkyl_series,50.0,73.55404663859038,fixed_selected_group_holdout,yield,,
+2j,biphenyl,70.0,85.04588126640219,fixed_selected_group_holdout,yield,,
+2k,biphenyl,70.0,85.47676451053954,fixed_selected_group_holdout,yield,,
+2z,cyclic_benzylic,70.0,85.02500527429686,fixed_selected_group_holdout,yield,,
+2r,meta_halogen,80.0,82.79734155194676,fixed_selected_group_holdout,yield,,
+2s,meta_halogen,80.0,80.0,fixed_selected_group_holdout,yield,,
+2a,naphthyl,95.0,78.53348215311284,fixed_selected_group_holdout,yield,,
+2b,naphthyl,84.0,78.53348215311284,fixed_selected_group_holdout,yield,,
+2c,naphthyl,71.0,73.10301632398978,fixed_selected_group_holdout,yield,,
+2t,ortho_halogen,88.0,82.73599451369306,fixed_selected_group_holdout,yield,,
+2u,ortho_halogen,85.0,83.00932642973943,fixed_selected_group_holdout,yield,,
+2v,ortho_halogen,85.0,78.66451859011588,fixed_selected_group_holdout,yield,,
+2h,para_edg,79.0,79.1866060866182,fixed_selected_group_holdout,yield,,
+2i,para_edg,76.0,79.33605465094244,fixed_selected_group_holdout,yield,,
+2l,para_ewg,71.0,70.07675574622755,fixed_selected_group_holdout,yield,,
+2m,para_ewg,72.0,82.7661254385461,fixed_selected_group_holdout,yield,,
+2n,para_ewg,70.0,82.74876907653866,fixed_selected_group_holdout,yield,,
+2o,para_halogen,86.0,79.11018597583278,fixed_selected_group_holdout,yield,,
+2p,para_halogen,85.0,84.98110505371133,fixed_selected_group_holdout,yield,,
+2q,para_halogen,80.0,76.69625652298674,fixed_selected_group_holdout,yield,,
+2w,polyhalogen,89.0,86.84930485482843,fixed_selected_group_holdout,yield,,
+2x,polyhalogen,75.0,86.95289265139915,fixed_selected_group_holdout,yield,,
+2y,polyhalogen,80.0,80.0,fixed_selected_group_holdout,yield,,
+2d,alkyl_series,86.0,82.68595835911007,nested_group_holdout,yield,xgboost|manual_core|max_depth=2|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2e,alkyl_series,61.0,82.68595835911007,nested_group_holdout,yield,xgboost|manual_core|max_depth=2|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2f,alkyl_series,74.0,78.64265003594436,nested_group_holdout,yield,xgboost|manual_core|max_depth=2|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2g,alkyl_series,50.0,78.64265003594436,nested_group_holdout,yield,xgboost|manual_core|max_depth=2|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2j,biphenyl,70.0,85.04588126640219,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2k,biphenyl,70.0,85.47676451053954,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2z,cyclic_benzylic,70.0,85.02500527429686,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2r,meta_halogen,80.0,84.60563661810708,nested_group_holdout,yield,knn|discriminating_2d|k=3|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2s,meta_halogen,80.0,81.73104935399199,nested_group_holdout,yield,knn|discriminating_2d|k=3|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2a,naphthyl,95.0,75.6058433821342,nested_group_holdout,yield,knn|manual_core|k=3|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2b,naphthyl,84.0,75.6058433821342,nested_group_holdout,yield,knn|manual_core|k=3|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2c,naphthyl,71.0,71.8950915502533,nested_group_holdout,yield,knn|manual_core|k=3|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2t,ortho_halogen,88.0,82.73599451369306,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2u,ortho_halogen,85.0,83.00932642973943,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2v,ortho_halogen,85.0,78.66451859011588,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2h,para_edg,79.0,84.87040207018192,nested_group_holdout,yield,knn|manual_core|k=5|transformed=False,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2i,para_edg,76.0,83.75648907694723,nested_group_holdout,yield,knn|manual_core|k=5|transformed=False,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2l,para_ewg,71.0,70.07675574622755,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2m,para_ewg,72.0,82.7661254385461,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2n,para_ewg,70.0,82.74876907653866,nested_group_holdout,yield,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2o,para_halogen,86.0,79.17327814420896,nested_group_holdout,yield,knn|discriminating_2d|k=4|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2p,para_halogen,85.0,83.21998112168725,nested_group_holdout,yield,knn|discriminating_2d|k=4|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2q,para_halogen,80.0,76.10047956529982,nested_group_holdout,yield,knn|discriminating_2d|k=4|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2w,polyhalogen,89.0,81.02357487172995,nested_group_holdout,yield,xgboost|manual_core|max_depth=1|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2x,polyhalogen,75.0,81.02357487172995,nested_group_holdout,yield,xgboost|manual_core|max_depth=1|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2y,polyhalogen,80.0,80.76345340556662,nested_group_holdout,yield,xgboost|manual_core|max_depth=1|learning_rate=0.05|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2d,alkyl_series,86.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2e,alkyl_series,61.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2f,alkyl_series,74.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2g,alkyl_series,50.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2j,biphenyl,70.0,78.0,mean_baseline_group_holdout,yield,,
+2k,biphenyl,70.0,78.0,mean_baseline_group_holdout,yield,,
+2z,cyclic_benzylic,70.0,77.68,mean_baseline_group_holdout,yield,,
+2r,meta_halogen,80.0,77.16666666666667,mean_baseline_group_holdout,yield,,
+2s,meta_halogen,80.0,77.16666666666667,mean_baseline_group_holdout,yield,,
+2a,naphthyl,95.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2b,naphthyl,84.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2c,naphthyl,71.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2t,ortho_halogen,88.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2u,ortho_halogen,85.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2v,ortho_halogen,85.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2h,para_edg,79.0,77.375,mean_baseline_group_holdout,yield,,
+2i,para_edg,76.0,77.375,mean_baseline_group_holdout,yield,,
+2l,para_ewg,71.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2m,para_ewg,72.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2n,para_ewg,70.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2o,para_halogen,86.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2p,para_halogen,85.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2q,para_halogen,80.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2w,polyhalogen,89.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2x,polyhalogen,75.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2y,polyhalogen,80.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2d,alkyl_series,87.0,87.35824428200384,fixed_selected_group_holdout,ee,,
+2e,alkyl_series,91.0,87.35824428200384,fixed_selected_group_holdout,ee,,
+2f,alkyl_series,85.0,81.40463651011422,fixed_selected_group_holdout,ee,,
+2g,alkyl_series,80.0,79.7474462214124,fixed_selected_group_holdout,ee,,
+2j,biphenyl,92.0,82.36872363778109,fixed_selected_group_holdout,ee,,
+2k,biphenyl,90.0,90.02262642651209,fixed_selected_group_holdout,ee,,
+2z,cyclic_benzylic,75.0,89.43191412521341,fixed_selected_group_holdout,ee,,
+2r,meta_halogen,90.0,87.96072497389315,fixed_selected_group_holdout,ee,,
+2s,meta_halogen,90.0,87.96072497389315,fixed_selected_group_holdout,ee,,
+2a,naphthyl,90.0,87.22395305743674,fixed_selected_group_holdout,ee,,
+2b,naphthyl,90.0,87.22395305743674,fixed_selected_group_holdout,ee,,
+2c,naphthyl,80.0,80.4815724848476,fixed_selected_group_holdout,ee,,
+2t,ortho_halogen,94.0,90.84547150003974,fixed_selected_group_holdout,ee,,
+2u,ortho_halogen,95.0,90.84547150003974,fixed_selected_group_holdout,ee,,
+2v,ortho_halogen,91.0,90.84547150003974,fixed_selected_group_holdout,ee,,
+2h,para_edg,79.0,87.60347902683147,fixed_selected_group_holdout,ee,,
+2i,para_edg,60.0,81.66481762823479,fixed_selected_group_holdout,ee,,
+2l,para_ewg,84.0,82.86611613671795,fixed_selected_group_holdout,ee,,
+2m,para_ewg,84.0,86.79303187704524,fixed_selected_group_holdout,ee,,
+2n,para_ewg,41.0,82.86611613671795,fixed_selected_group_holdout,ee,,
+2o,para_halogen,80.0,88.36545598119085,fixed_selected_group_holdout,ee,,
+2p,para_halogen,86.0,88.36545598119085,fixed_selected_group_holdout,ee,,
+2q,para_halogen,86.0,88.36545598119085,fixed_selected_group_holdout,ee,,
+2w,polyhalogen,93.0,87.80984340453367,fixed_selected_group_holdout,ee,,
+2x,polyhalogen,95.0,91.1684725753694,fixed_selected_group_holdout,ee,,
+2y,polyhalogen,86.0,84.438555214425,fixed_selected_group_holdout,ee,,
+2d,alkyl_series,87.0,85.37911319351501,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2e,alkyl_series,91.0,95.5694473029099,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2f,alkyl_series,85.0,91.45475688176944,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2g,alkyl_series,80.0,89.22223270674066,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2j,biphenyl,92.0,82.36872363778109,nested_group_holdout,ee,xgboost|manual_expanded|max_depth=1|learning_rate=0.1|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2k,biphenyl,90.0,90.02262642651209,nested_group_holdout,ee,xgboost|manual_expanded|max_depth=1|learning_rate=0.1|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2z,cyclic_benzylic,75.0,88.73163564057052,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2r,meta_halogen,90.0,88.23254649644602,nested_group_holdout,ee,ridge|discriminating_2d|alpha=30.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2s,meta_halogen,90.0,88.27931900344677,nested_group_holdout,ee,ridge|discriminating_2d|alpha=30.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2a,naphthyl,90.0,85.28996185873204,nested_group_holdout,ee,ridge|discriminating_2d|alpha=30.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2b,naphthyl,90.0,85.28996185873204,nested_group_holdout,ee,ridge|discriminating_2d|alpha=30.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2c,naphthyl,80.0,78.43452899382338,nested_group_holdout,ee,ridge|discriminating_2d|alpha=30.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2t,ortho_halogen,94.0,92.47293247242332,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2u,ortho_halogen,95.0,93.74314797348798,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2v,ortho_halogen,91.0,88.32118366603439,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2h,para_edg,79.0,85.65944686639045,nested_group_holdout,ee,knn|discriminating_2d|k=5|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2i,para_edg,60.0,85.49903023047383,nested_group_holdout,ee,knn|discriminating_2d|k=5|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2l,para_ewg,84.0,79.51753034492673,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2m,para_ewg,84.0,89.43256250546754,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2n,para_ewg,41.0,87.26751216593115,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2o,para_halogen,80.0,90.56003072776694,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2p,para_halogen,86.0,91.61172722412249,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2q,para_halogen,86.0,87.6760588359608,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2w,polyhalogen,93.0,88.1365999537507,nested_group_holdout,ee,ridge|manual_expanded|alpha=1.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2x,polyhalogen,95.0,94.76856005785228,nested_group_holdout,ee,ridge|manual_expanded|alpha=1.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2y,polyhalogen,86.0,79.88249381381021,nested_group_holdout,ee,ridge|manual_expanded|alpha=1.0,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2d,alkyl_series,87.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2e,alkyl_series,91.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2f,alkyl_series,85.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2g,alkyl_series,80.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2j,biphenyl,92.0,83.83333333333333,mean_baseline_group_holdout,ee,,
+2k,biphenyl,90.0,83.83333333333333,mean_baseline_group_holdout,ee,,
+2z,cyclic_benzylic,75.0,84.76,mean_baseline_group_holdout,ee,,
+2r,meta_halogen,90.0,83.91666666666667,mean_baseline_group_holdout,ee,,
+2s,meta_halogen,90.0,83.91666666666667,mean_baseline_group_holdout,ee,,
+2a,naphthyl,90.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2b,naphthyl,90.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2c,naphthyl,80.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2t,ortho_halogen,94.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2u,ortho_halogen,95.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2v,ortho_halogen,91.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2h,para_edg,79.0,85.625,mean_baseline_group_holdout,ee,,
+2i,para_edg,60.0,85.625,mean_baseline_group_holdout,ee,,
+2l,para_ewg,84.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2m,para_ewg,84.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2n,para_ewg,41.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2o,para_halogen,80.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2p,para_halogen,86.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2q,para_halogen,86.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2w,polyhalogen,93.0,83.47826086956522,mean_baseline_group_holdout,ee,,
+2x,polyhalogen,95.0,83.47826086956522,mean_baseline_group_holdout,ee,,
+2y,polyhalogen,86.0,83.47826086956522,mean_baseline_group_holdout,ee,,

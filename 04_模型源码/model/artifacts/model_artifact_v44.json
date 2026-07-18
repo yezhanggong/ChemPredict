@@ -1,0 +1,6592 @@
+{
+  "model_version": "4.4.0",
+  "generated_with": "04_模型源码/model/train_v44.py + finalize_v44_artifact.py",
+  "source_doi": "10.1021/acs.orglett.5c05116",
+  "temperature_k_for_ee_transform": 298.15,
+  "domain_definition": "Products 2a-2z under the fixed optimized NHP-ether deoxygenative asymmetric cyanation protocol",
+  "training_count": 26,
+  "challenge_count": 4,
+  "condition_record_count": 33,
+  "condition_feature_mode": "evidence_only_not_a_scope_model_feature",
+  "condition_descriptors_in_final_scope_model": false,
+  "condition_descriptor_reason": "All 26 scope rows share the optimized condition; constant condition columns cannot identify condition effects.",
+  "censoring_analysis_mode": "exclude",
+  "censored_rows_in_final_scope_model": false,
+  "censoring_semantics": "Tobit is an exploratory condition-screen comparison only; the final scope predictors use quantitative scope outcomes.",
+  "known_scope": [
+    {
+      "id": "2a",
+      "product_name": "(S)-2-(naphthalen-2-yl)propanenitrile",
+      "pubchem_query": "2-(naphthalen-2-yl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc2ccccc2c1",
+      "scope_group": "naphthyl",
+      "source_pdf_page": "26",
+      "yield_pct": 95,
+      "ee_pct": 90,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 2,
+      "fused_aromatic": 1,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "2-naphthyl model substrate"
+    },
+    {
+      "id": "2b",
+      "product_name": "(S)-2-(naphthalen-1-yl)propanenitrile",
+      "pubchem_query": "2-(naphthalen-1-yl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1cccc2ccccc12",
+      "scope_group": "naphthyl",
+      "source_pdf_page": "26",
+      "yield_pct": 84,
+      "ee_pct": 90,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 2,
+      "fused_aromatic": 1,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "1-naphthyl regioisomer"
+    },
+    {
+      "id": "2c",
+      "product_name": "(S)-2-(6-methoxynaphthalen-2-yl)propanenitrile",
+      "pubchem_query": "2-(6-methoxynaphthalen-2-yl)propanenitrile",
+      "manual_smiles": "COc1ccc2cc(C(C)C#N)ccc2c1",
+      "scope_group": "naphthyl",
+      "source_pdf_page": "27",
+      "yield_pct": 71,
+      "ee_pct": 80,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 2,
+      "fused_aromatic": 1,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 1,
+      "ewg_count": 0,
+      "sidechain_polar_count": 1,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "naphthyl methoxy position not mapped onto benzene Hammett scale"
+    },
+    {
+      "id": "2d",
+      "product_name": "(S)-2-phenylpropanenitrile",
+      "pubchem_query": "2-phenylpropanenitrile",
+      "manual_smiles": "CC(C#N)c1ccccc1",
+      "scope_group": "alkyl_series",
+      "source_pdf_page": "27",
+      "yield_pct": 86,
+      "ee_pct": 87,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "unsubstituted phenyl reference"
+    },
+    {
+      "id": "2e",
+      "product_name": "(S)-2-phenylheptanenitrile",
+      "pubchem_query": "2-phenylheptanenitrile",
+      "manual_smiles": "CCCCCC(C#N)c1ccccc1",
+      "scope_group": "alkyl_series",
+      "source_pdf_page": "28",
+      "yield_pct": 61,
+      "ee_pct": 91,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 5,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "long alkyl substituent at stereocentre"
+    },
+    {
+      "id": "2f",
+      "product_name": "(S)-5-bromo-2-phenylpentanenitrile",
+      "pubchem_query": "5-bromo-2-phenylpentanenitrile",
+      "manual_smiles": "BrCCCC(C#N)c1ccccc1",
+      "scope_group": "alkyl_series",
+      "source_pdf_page": "28",
+      "yield_pct": 74,
+      "ee_pct": 85,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 3,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 1,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "terminal bromide"
+    },
+    {
+      "id": "2g",
+      "product_name": "methyl (S)-5-cyano-5-phenylpentanoate",
+      "pubchem_query": "methyl 5-cyano-5-phenylpentanoate",
+      "manual_smiles": "COC(=O)CCCC(C#N)c1ccccc1",
+      "scope_group": "alkyl_series",
+      "source_pdf_page": "28",
+      "yield_pct": 50,
+      "ee_pct": 80,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 3,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 2,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "terminal ester"
+    },
+    {
+      "id": "2h",
+      "product_name": "(S)-2-(p-tolyl)propanenitrile",
+      "pubchem_query": "2-(4-methylphenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(C)cc1",
+      "scope_group": "para_edg",
+      "source_pdf_page": "29",
+      "yield_pct": 79,
+      "ee_pct": 79,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": -0.17,
+      "halogen_count": 0,
+      "edg_count": 1,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p from Hansch Leo Taft"
+    },
+    {
+      "id": "2i",
+      "product_name": "(S)-2-(4-methoxyphenyl)propanenitrile",
+      "pubchem_query": "2-(4-methoxyphenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(OC)cc1",
+      "scope_group": "para_edg",
+      "source_pdf_page": "29",
+      "yield_pct": 76,
+      "ee_pct": 60,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": -0.27,
+      "halogen_count": 0,
+      "edg_count": 1,
+      "ewg_count": 0,
+      "sidechain_polar_count": 1,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p from Hansch Leo Taft"
+    },
+    {
+      "id": "2j",
+      "product_name": "(S)-2-([1,1'-biphenyl]-4-yl)propanenitrile",
+      "pubchem_query": "2-(4-biphenylyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(-c2ccccc2)cc1",
+      "scope_group": "biphenyl",
+      "source_pdf_page": "29",
+      "yield_pct": 70,
+      "ee_pct": 92,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 2,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": -0.01,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "para phenyl substituent"
+    },
+    {
+      "id": "2k",
+      "product_name": "(S)-2-(2-fluoro-[1,1'-biphenyl]-4-yl)propanenitrile",
+      "pubchem_query": "2-(2-fluoro-4-biphenylyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(-c2ccccc2)cc1F",
+      "scope_group": "biphenyl",
+      "source_pdf_page": "30",
+      "yield_pct": 70,
+      "ee_pct": 90,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 2,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 1,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": -0.01,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "ortho F encoded separately; para phenyl sigma used"
+    },
+    {
+      "id": "2l",
+      "product_name": "methyl (S)-4-(1-cyanoethyl)benzoate",
+      "pubchem_query": "methyl 4-(1-cyanoethyl)benzoate",
+      "manual_smiles": "COC(=O)c1ccc(C(C)C#N)cc1",
+      "scope_group": "para_ewg",
+      "source_pdf_page": "30",
+      "yield_pct": 71,
+      "ee_pct": 84,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.45,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 2,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for CO2Me"
+    },
+    {
+      "id": "2m",
+      "product_name": "(S)-2-(4-(trifluoromethyl)phenyl)propanenitrile",
+      "pubchem_query": "2-(4-(trifluoromethyl)phenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(C(F)(F)F)cc1",
+      "scope_group": "para_ewg",
+      "source_pdf_page": "31",
+      "yield_pct": 72,
+      "ee_pct": 84,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.54,
+      "halogen_count": 3,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for CF3"
+    },
+    {
+      "id": "2n",
+      "product_name": "(S)-4-(1-cyanoethyl)benzonitrile",
+      "pubchem_query": "4-(1-cyanoethyl)benzonitrile",
+      "manual_smiles": "CC(C#N)c1ccc(C#N)cc1",
+      "scope_group": "para_ewg",
+      "source_pdf_page": "31",
+      "yield_pct": 70,
+      "ee_pct": 41,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.66,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 1,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for CN; low-ee outlier retained"
+    },
+    {
+      "id": "2o",
+      "product_name": "(S)-2-(4-fluorophenyl)propanenitrile",
+      "pubchem_query": "2-(4-fluorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(F)cc1",
+      "scope_group": "para_halogen",
+      "source_pdf_page": "32",
+      "yield_pct": 86,
+      "ee_pct": 80,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.06,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for F"
+    },
+    {
+      "id": "2p",
+      "product_name": "(S)-2-(4-chlorophenyl)propanenitrile",
+      "pubchem_query": "2-(4-chlorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(Cl)cc1",
+      "scope_group": "para_halogen",
+      "source_pdf_page": "32",
+      "yield_pct": 85,
+      "ee_pct": 86,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.23,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for Cl"
+    },
+    {
+      "id": "2q",
+      "product_name": "(S)-2-(4-bromophenyl)propanenitrile",
+      "pubchem_query": "2-(4-bromophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(Br)cc1",
+      "scope_group": "para_halogen",
+      "source_pdf_page": "32",
+      "yield_pct": 80,
+      "ee_pct": 86,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.23,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_p for Br"
+    },
+    {
+      "id": "2r",
+      "product_name": "(S)-2-(3-chlorophenyl)propanenitrile",
+      "pubchem_query": "2-(3-chlorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1cccc(Cl)c1",
+      "scope_group": "meta_halogen",
+      "source_pdf_page": "33",
+      "yield_pct": 80,
+      "ee_pct": 90,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 1,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.37,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_m for Cl"
+    },
+    {
+      "id": "2s",
+      "product_name": "(S)-2-(3-bromophenyl)propanenitrile",
+      "pubchem_query": "2-(3-bromophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1cccc(Br)c1",
+      "scope_group": "meta_halogen",
+      "source_pdf_page": "33",
+      "yield_pct": 80,
+      "ee_pct": 90,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 1,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.39,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "Hammett sigma_m for Br"
+    },
+    {
+      "id": "2t",
+      "product_name": "(S)-2-(2-chlorophenyl)propanenitrile",
+      "pubchem_query": "2-(2-chlorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccccc1Cl",
+      "scope_group": "ortho_halogen",
+      "source_pdf_page": "34",
+      "yield_pct": 88,
+      "ee_pct": 94,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 1,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "ortho effect encoded separately; no Hammett sigma assigned"
+    },
+    {
+      "id": "2u",
+      "product_name": "(S)-2-(2-bromophenyl)propanenitrile",
+      "pubchem_query": "2-(2-bromophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccccc1Br",
+      "scope_group": "ortho_halogen",
+      "source_pdf_page": "34",
+      "yield_pct": 85,
+      "ee_pct": 95,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 1,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "ortho effect encoded separately; no Hammett sigma assigned"
+    },
+    {
+      "id": "2v",
+      "product_name": "(S)-2-(2-fluorophenyl)propanenitrile",
+      "pubchem_query": "2-(2-fluorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccccc1F",
+      "scope_group": "ortho_halogen",
+      "source_pdf_page": "34",
+      "yield_pct": 85,
+      "ee_pct": 91,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 1,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "ortho effect encoded separately; no Hammett sigma assigned"
+    },
+    {
+      "id": "2w",
+      "product_name": "(S)-2-(2,4-dichlorophenyl)propanenitrile",
+      "pubchem_query": "2-(2,4-dichlorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1ccc(Cl)cc1Cl",
+      "scope_group": "polyhalogen",
+      "source_pdf_page": "35",
+      "yield_pct": 89,
+      "ee_pct": 93,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 1,
+      "meta_sub_count": 0,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.23,
+      "halogen_count": 2,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "para sigma plus separate ortho count"
+    },
+    {
+      "id": "2x",
+      "product_name": "(S)-2-(2,6-dichlorophenyl)propanenitrile",
+      "pubchem_query": "2-(2,6-dichlorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1c(Cl)cccc1Cl",
+      "scope_group": "polyhalogen",
+      "source_pdf_page": "35",
+      "yield_pct": 75,
+      "ee_pct": 95,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 2,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 2,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "two ortho substituents"
+    },
+    {
+      "id": "2y",
+      "product_name": "(S)-2-(4-bromo-3-fluorophenyl)propanenitrile",
+      "pubchem_query": "2-(4-bromo-3-fluorophenyl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1cc(F)c(Br)cc1",
+      "scope_group": "polyhalogen",
+      "source_pdf_page": "35",
+      "yield_pct": 80,
+      "ee_pct": 86,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 1,
+      "para_sub_count": 1,
+      "hammett_sigma_mp": 0.57,
+      "halogen_count": 2,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "sigma_m(F)+sigma_p(Br)"
+    },
+    {
+      "id": "2z",
+      "product_name": "(S)-1,2,3,4-tetrahydronaphthalene-1-carbonitrile",
+      "pubchem_query": "1,2,3,4-tetrahydronaphthalene-1-carbonitrile",
+      "manual_smiles": "N#CC1CCCc2ccccc21",
+      "scope_group": "cyclic_benzylic",
+      "source_pdf_page": "36",
+      "yield_pct": 70,
+      "ee_pct": 75,
+      "radical_class": "benzylic",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 1,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 1,
+      "alpha_chain_carbons": 0,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "cyclic benzylic radical"
+    },
+    {
+      "id": "3a",
+      "product_name": "(R)-2-(thiophen-2-yl)propanenitrile",
+      "pubchem_query": "2-(thiophen-2-yl)propanenitrile",
+      "manual_smiles": "CC(C#N)c1cccs1",
+      "scope_group": "heteroaryl",
+      "source_pdf_page": "36",
+      "yield_pct": 50,
+      "ee_pct": 90,
+      "radical_class": "heteroaryl",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 1,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 1,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "thiophene tolerated"
+    },
+    {
+      "id": "3b",
+      "product_name": "(S)-2-chloro-5,6,7,8-tetrahydroquinoline-5-carbonitrile",
+      "pubchem_query": "2-chloro-5,6,7,8-tetrahydroquinoline-5-carbonitrile",
+      "manual_smiles": "N#CC1CCCc2ccc(Cl)nc21",
+      "scope_group": "special_scope",
+      "source_pdf_page": "37",
+      "yield_pct": 54,
+      "ee_pct": 27,
+      "radical_class": "heteroaryl",
+      "benzylic": 1,
+      "aryl_rings": 1,
+      "fused_aromatic": 1,
+      "hetero_n": 1,
+      "hetero_s": 0,
+      "cyclic_center": 1,
+      "alpha_chain_carbons": 0,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 1,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "pyridine-containing low-ee case"
+    },
+    {
+      "id": "3c",
+      "product_name": "(R)-1-oxo-1,2,3,4-tetrahydronaphthalene-2-carbonitrile",
+      "pubchem_query": "1-oxo-1,2,3,4-tetrahydronaphthalene-2-carbonitrile",
+      "manual_smiles": "N#CC1CCC2=CC=CC=C2C1=O",
+      "scope_group": "special_scope",
+      "source_pdf_page": "37-38",
+      "yield_pct": 80,
+      "ee_pct": 60,
+      "radical_class": "alpha_carbonyl",
+      "benzylic": 0,
+      "aryl_rings": 1,
+      "fused_aromatic": 1,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 1,
+      "alpha_chain_carbons": 0,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 1,
+      "sidechain_polar_count": 1,
+      "alpha_carbonyl": 1,
+      "propargyl": 0,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "alpha-cyano ketone"
+    },
+    {
+      "id": "3d",
+      "product_name": "(R)-2-phenethyl-4-(trimethylsilyl)but-3-ynenitrile",
+      "pubchem_query": "2-phenethyl-4-(trimethylsilyl)but-3-ynenitrile",
+      "manual_smiles": "C[Si](C)(C)C#CC(C#N)CCc1ccccc1",
+      "scope_group": "special_scope",
+      "source_pdf_page": "38",
+      "yield_pct": 80,
+      "ee_pct": 19,
+      "radical_class": "propargylic",
+      "benzylic": 0,
+      "aryl_rings": 1,
+      "fused_aromatic": 0,
+      "hetero_n": 0,
+      "hetero_s": 0,
+      "cyclic_center": 0,
+      "alpha_chain_carbons": 2,
+      "ortho_sub_count": 0,
+      "meta_sub_count": 0,
+      "para_sub_count": 0,
+      "hammett_sigma_mp": 0.0,
+      "halogen_count": 0,
+      "edg_count": 0,
+      "ewg_count": 0,
+      "sidechain_polar_count": 0,
+      "alpha_carbonyl": 0,
+      "propargyl": 1,
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "notes": "propargylic radical class; very low ee"
+    }
+  ],
+  "condition_screen": [
+    {
+      "record_id": "SOLV-01",
+      "screen_axis": "solvent",
+      "entry": "1",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "CH3CN",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 40.0,
+      "ee_pct": 74.0,
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "SOLV-02",
+      "screen_axis": "solvent",
+      "entry": "2",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "SOLV-03",
+      "screen_axis": "solvent",
+      "entry": "3",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCE",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 55.0,
+      "ee_pct": 84.0,
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "SOLV-04",
+      "screen_axis": "solvent",
+      "entry": "4",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "CHCl3",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 55.0,
+      "ee_pct": 87.0,
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "SOLV-05",
+      "screen_axis": "solvent",
+      "entry": "5",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "PhCl",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "trace",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "trace; no numerical detection limit reported"
+    },
+    {
+      "record_id": "SOLV-06",
+      "screen_axis": "solvent",
+      "entry": "6",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "acetone",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "trace",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "trace; no numerical detection limit reported"
+    },
+    {
+      "record_id": "SOLV-07",
+      "screen_axis": "solvent",
+      "entry": "7",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "MTBE",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "trace",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S1",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "trace; no numerical detection limit reported"
+    },
+    {
+      "record_id": "PC-01",
+      "screen_axis": "photocatalyst",
+      "entry": "1",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "duplicate_anchor",
+      "notes": "same condition as SOLV-02"
+    },
+    {
+      "record_id": "PC-02",
+      "screen_axis": "photocatalyst",
+      "entry": "2",
+      "photocatalyst": "[Ir(dFCF3ppy)2(bpy)]PF6",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "trace",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "trace; no numerical detection limit reported"
+    },
+    {
+      "record_id": "PC-03",
+      "screen_axis": "photocatalyst",
+      "entry": "3",
+      "photocatalyst": "4CzIPN",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "trace",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "trace; no numerical detection limit reported"
+    },
+    {
+      "record_id": "PC-04",
+      "screen_axis": "photocatalyst",
+      "entry": "4",
+      "photocatalyst": "Eosin Y",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "not_detected",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "n.d. as printed; definition not supplied"
+    },
+    {
+      "record_id": "PC-05",
+      "screen_axis": "photocatalyst",
+      "entry": "5",
+      "photocatalyst": "5,7,12,14-Pentacenetetrone",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "not_detected",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "n.d. as printed; definition not supplied"
+    },
+    {
+      "record_id": "PC-06",
+      "screen_axis": "photocatalyst",
+      "entry": "6",
+      "photocatalyst": "9,10-Diphenylanthracene",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "not_detected",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Table S2",
+      "source_pdf_page": "16",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "n.d. as printed; definition not supplied"
+    },
+    {
+      "record_id": "CU-01",
+      "screen_axis": "copper_source",
+      "entry": "1",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuBr",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 82.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-02",
+      "screen_axis": "copper_source",
+      "entry": "2",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCl2",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 47.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-03",
+      "screen_axis": "copper_source",
+      "entry": "3",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuBr2",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 72.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-04",
+      "screen_axis": "copper_source",
+      "entry": "4",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCl",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 80.0,
+      "ee_pct": 87.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-05",
+      "screen_axis": "copper_source",
+      "entry": "5",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 90.0,
+      "ee_pct": 90.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-06",
+      "screen_axis": "copper_source",
+      "entry": "6",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4BF4",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 45.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "CU-07",
+      "screen_axis": "copper_source",
+      "entry": "7",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "Cu(CH3CN)4PF6",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 88.0,
+      "source_table": "Table S3",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "duplicate_anchor",
+      "notes": "same condition as SOLV-02"
+    },
+    {
+      "record_id": "LIG-01",
+      "screen_axis": "ligand",
+      "entry": "1",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 90.0,
+      "ee_pct": 90.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "duplicate_anchor",
+      "notes": "same condition as CU-05"
+    },
+    {
+      "record_id": "LIG-02",
+      "screen_axis": "ligand",
+      "entry": "2",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L2",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 70.0,
+      "ee_pct": 47.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "LIG-03",
+      "screen_axis": "ligand",
+      "entry": "3",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L3",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 37.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "LIG-04",
+      "screen_axis": "ligand",
+      "entry": "4",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L4",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "less_than_50",
+      "yield_pct": "",
+      "ee_pct": 0.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "censored",
+      "notes": "yield printed as <50%; retained as interval only"
+    },
+    {
+      "record_id": "LIG-05",
+      "screen_axis": "ligand",
+      "entry": "5",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L5",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 25.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "LIG-06",
+      "screen_axis": "ligand",
+      "entry": "6",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L6",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 50.0,
+      "ee_pct": 25.0,
+      "source_table": "Table S4",
+      "source_pdf_page": "17",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "TEMP-01",
+      "screen_axis": "temperature",
+      "entry": "1",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 90.0,
+      "ee_pct": 90.0,
+      "source_table": "Table S5",
+      "source_pdf_page": "18",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "duplicate_anchor",
+      "notes": "rt represented as 25 C for software"
+    },
+    {
+      "record_id": "TEMP-02",
+      "screen_axis": "temperature",
+      "entry": "2",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 0,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 55.0,
+      "ee_pct": 89.0,
+      "source_table": "Table S5",
+      "source_pdf_page": "18",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "TEMP-03",
+      "screen_axis": "temperature",
+      "entry": "3",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 5,
+      "ligand": "L1",
+      "ligand_mol_pct": 6,
+      "solvent": "DCM",
+      "temp_c": 40,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 92.0,
+      "ee_pct": 90.0,
+      "source_table": "Table S5",
+      "source_pdf_page": "18",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "isolated yield"
+    },
+    {
+      "record_id": "OPT-01",
+      "screen_axis": "reduced_loading",
+      "entry": "13",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 2,
+      "ligand": "L1",
+      "ligand_mol_pct": 3,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 90.0,
+      "ee_pct": 90.0,
+      "source_table": "Table 1",
+      "source_pdf_page": "2",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "train",
+      "notes": "optimized condition at reduced Cu/ligand loading"
+    },
+    {
+      "record_id": "REP-01",
+      "screen_axis": "scope_replicate",
+      "entry": "2a",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 2,
+      "ligand": "L1",
+      "ligand_mol_pct": 3,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.2,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "measured",
+      "yield_pct": 95.0,
+      "ee_pct": 90.0,
+      "source_table": "Table 2 / SI analytical data",
+      "source_pdf_page": "3 / 26",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "external_repeat",
+      "notes": "independent scale result for substrate 1a"
+    },
+    {
+      "record_id": "CTRL-01",
+      "screen_axis": "control",
+      "entry": "no P(OEt)3",
+      "photocatalyst": "fac-Ir(ppy)3",
+      "pc_mol_pct": 1,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 2,
+      "ligand": "L1",
+      "ligand_mol_pct": 3,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "not_obtained",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Control experiment",
+      "source_pdf_page": "25",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "mechanistic_gate",
+      "notes": "P(OEt)3 omitted; product 2a not obtained"
+    },
+    {
+      "record_id": "CTRL-02",
+      "screen_axis": "control",
+      "entry": "no photocatalyst",
+      "photocatalyst": "none",
+      "pc_mol_pct": 0,
+      "copper_source": "CuCN",
+      "cu_mol_pct": 2,
+      "ligand": "L1",
+      "ligand_mol_pct": 3,
+      "solvent": "DCM",
+      "temp_c": 25,
+      "scale_mmol": 0.1,
+      "time_h": 12,
+      "light_nm": "450-465",
+      "yield_status": "not_obtained",
+      "yield_pct": "",
+      "ee_pct": "",
+      "source_table": "Control experiment",
+      "source_pdf_page": "25",
+      "source_doi": "10.1021/acs.orglett.5c05116",
+      "model_role": "mechanistic_gate",
+      "notes": "fac-Ir(ppy)3 omitted; product 2a not obtained"
+    }
+  ],
+  "models": {
+    "ee": {
+      "algorithm": "rbf_kernel_ridge",
+      "training_x_scaled": [
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          3.9567125297728203,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          2.7940027940041907,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.2761398333860443,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.7076045364814558,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.3989413258055075,
+          2.7940027940041907,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.7872595585913782,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          2.7968682325258656,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          2.305017202305872,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.2837710162665976,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.0537695633291784,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.1400625039482608,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          3.3084657994221347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.9166989695200014,
+          -0.508000508000762,
+          2.7688746209726913,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          2.3452078799117144,
+          5.0,
+          -1.3460980771392068,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ]
+      ],
+      "dual_coefficients": [
+        0.23442371344555032,
+        0.2344237134455283,
+        -0.1455843979941329,
+        -0.08650669986364604,
+        0.9927223655891164,
+        -0.6954121769063466,
+        -0.6513880888639737,
+        0.7016619904742268,
+        -2.600420043197675,
+        2.573045066947631,
+        -1.1308440539793088,
+        3.5459376492080152,
+        -0.5329463441391465,
+        -5.9796778997305235,
+        -2.3847105807179907,
+        0.5569795286478902,
+        0.556979528647893,
+        0.3931836985017192,
+        0.46565358522189876,
+        1.2823626743167928,
+        2.3930524766494363,
+        -1.2122942532920264,
+        2.079444449953551,
+        0.08384294306427365,
+        -0.07680279631901374,
+        -0.8158564388083501
+      ],
+      "intercept": 1.5698923196941559,
+      "alpha": 0.1,
+      "gamma": 0.1,
+      "feature_set": "manual_expanded",
+      "features": [
+        "aryl_rings",
+        "fused_aromatic",
+        "cyclic_center",
+        "alpha_chain_carbons",
+        "ortho_sub_count",
+        "hammett_sigma_mp",
+        "sidechain_polar_count",
+        "meta_sub_count",
+        "para_sub_count",
+        "halogen_count",
+        "edg_count",
+        "ewg_count"
+      ],
+      "mean": [
+        1.1923076923076923,
+        0.15384615384615385,
+        0.038461538461538464,
+        1.2692307692307692,
+        0.2692307692307692,
+        0.12576923076923077,
+        0.3076923076923077,
+        0.11538461538461539,
+        0.46153846153846156,
+        0.7307692307692307,
+        0.11538461538461539,
+        0.5384615384615384
+      ],
+      "scale": [
+        0.39411349099844606,
+        0.36080121229411,
+        0.19230769230769232,
+        0.9428962055485587,
+        0.5231334811052094,
+        0.23176866909988367,
+        0.605692913385524,
+        0.31948553318915673,
+        0.4985185152621431,
+        0.8113470426818841,
+        0.31948553318915673,
+        0.49851851526214314
+      ],
+      "target_transform": "ee_to_ddg_kcal_mol",
+      "selected_config": {
+        "algorithm": "rbf_kernel_ridge",
+        "feature_set": "manual_expanded",
+        "alpha": 0.1,
+        "gamma": 0.1
+      },
+      "selection_reason": "manual deployable model retained because generated descriptors failed the predeclared material-improvement rule",
+      "fixed_group_metrics": {
+        "mae": 5.4195355665752,
+        "rmse": 10.247332522375872,
+        "median_ae": 3.038934676719478,
+        "max_ae": 42.750020243668956,
+        "bias": 2.6156900280249102,
+        "r2": 0.1879599969671436,
+        "spearman": 0.7160137114676709
+      },
+      "nested_workflow_metrics": {
+        "mae": 6.179707360841407,
+        "rmse": 10.993087684715332,
+        "median_ae": 3.574924711285732,
+        "max_ae": 45.20735289367137,
+        "bias": 2.669467894632831,
+        "r2": 0.0654659061677979,
+        "spearman": 0.6201928819486031
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.09775463666768,
+        "rmse": 12.03748852671726,
+        "median_ae": 6.083333333333329,
+        "max_ae": 45.30434782608695,
+        "bias": -0.05305107935542653,
+        "r2": -0.12054044912664019,
+        "spearman": -0.8294158808671818
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 23.112036434120867,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established.",
+        "group_calibration": {
+          "alkyl_series": {
+            "n": 4,
+            "raw_half_width": 6.970625341436431,
+            "selected_half_width": 6.970625341436431,
+            "source": "group"
+          },
+          "biphenyl": {
+            "n": 2,
+            "raw_half_width": 4.7946240436210985,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "cyclic_benzylic": {
+            "n": 1,
+            "raw_half_width": 10.674160858224056,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "meta_halogen": {
+            "n": 2,
+            "raw_half_width": 2.0677886833671124,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "naphthyl": {
+            "n": 3,
+            "raw_half_width": 2.7281565642335863,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "ortho_halogen": {
+            "n": 3,
+            "raw_half_width": 3.49096925088368,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "para_edg": {
+            "n": 2,
+            "raw_half_width": 23.112036434120867,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "para_ewg": {
+            "n": 3,
+            "raw_half_width": 45.20735289367137,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "para_halogen": {
+            "n": 3,
+            "raw_half_width": 12.15437144736164,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          },
+          "polyhalogen": {
+            "n": 3,
+            "raw_half_width": 3.5677735278989218,
+            "selected_half_width": 23.112036434120867,
+            "source": "global_fallback"
+          }
+        },
+        "group_minimum_n": 4,
+        "empirical_q80_half_width": 6.232840437090275,
+        "group_interval_policy": "Use a narrower family interval only when n>=4; otherwise use global fallback."
+      },
+      "model_origin_version": "4.3.0",
+      "production_selection": "4.3.0_champion"
+    },
+    "yield": {
+      "algorithm": "ridge",
+      "coefficients": [
+        -0.024785969175339595,
+        -0.09258428446321526,
+        -0.11272363161123514,
+        -0.10899171469878503,
+        -0.037221630396345434,
+        -0.03790891361639524,
+        -0.03648431960722408
+      ],
+      "intercept": 1.2972035517626728,
+      "parameter": 30.0,
+      "feature_set": "physchem_compact",
+      "features": [
+        "mol_logp",
+        "mol_tpsa",
+        "mol_fraction_csp3",
+        "mol_rotatable_bonds",
+        "mol_bertz_complexity",
+        "mol_heteroatoms",
+        "nitrile_count"
+      ],
+      "mean": [
+        3.057214615384617,
+        27.438076923076917,
+        0.24621020005635388,
+        1.5769230769230769,
+        341.33601206144914,
+        2.0,
+        1.0384615384615385
+      ],
+      "scale": [
+        0.5594538128886263,
+        8.259516198920897,
+        0.07723278659695547,
+        1.214434877218996,
+        91.76546806910682,
+        0.7844645405527362,
+        0.19230769230769226
+      ],
+      "target_transform": "yield_logit",
+      "selected_config": {
+        "algorithm": "ridge",
+        "feature_set": "physchem_compact",
+        "alpha": 30.0
+      },
+      "selection_reason": "lowest grouped MAE; generated descriptors passed the predeclared >=1 point and non-worse RMSE rule",
+      "fixed_group_metrics": {
+        "mae": 5.807223985558486,
+        "rmse": 7.54364944041854,
+        "median_ae": 4.493608517621574,
+        "max_ae": 18.052043544286093,
+        "bias": 0.5600347790538015,
+        "r2": 0.36229538341571144,
+        "spearman": 0.2400436008192385
+      },
+      "nested_workflow_metrics": {
+        "mae": 8.02921634518887,
+        "rmse": 10.948383604117451,
+        "median_ae": 5.562129160875237,
+        "max_ae": 30.275319910590497,
+        "bias": 1.9593098326366094,
+        "r2": -0.3432491544825558,
+        "spearman": 0.015453450696517499
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.16596331205027,
+        "rmse": 10.123221948778248,
+        "median_ae": 7.53565217391305,
+        "max_ae": 29.13636363636364,
+        "bias": 0.033615587311238926,
+        "r2": -0.14840237540575152,
+        "spearman": -0.6784670817464411
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 20.964124242345378,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established.",
+        "group_calibration": {
+          "alkyl_series": {
+            "n": 4,
+            "raw_half_width": 30.275319910590497,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "biphenyl": {
+            "n": 2,
+            "raw_half_width": 18.678358454233376,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "cyclic_benzylic": {
+            "n": 1,
+            "raw_half_width": 12.182805602167832,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "meta_halogen": {
+            "n": 2,
+            "raw_half_width": 1.5113901099520035,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "naphthyl": {
+            "n": 3,
+            "raw_half_width": 20.964124242345378,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "ortho_halogen": {
+            "n": 3,
+            "raw_half_width": 7.663580572789854,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "para_edg": {
+            "n": 2,
+            "raw_half_width": 2.0122707044836545,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "para_ewg": {
+            "n": 3,
+            "raw_half_width": 6.810545880084263,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "para_halogen": {
+            "n": 3,
+            "raw_half_width": 4.848934699430757,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          },
+          "polyhalogen": {
+            "n": 3,
+            "raw_half_width": 10.12675767707357,
+            "selected_half_width": 20.964124242345378,
+            "source": "global_fallback"
+          }
+        },
+        "group_minimum_n": 4,
+        "empirical_q80_half_width": 12.182805602167832,
+        "group_interval_policy": "Use a narrower family interval only when n>=4; otherwise use global fallback."
+      },
+      "model_origin_version": "4.3.0",
+      "production_selection": "4.3.0_champion"
+    }
+  },
+  "fallback_models": {
+    "yield": {
+      "algorithm": "rbf_kernel_ridge",
+      "training_x_scaled": [
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          3.9567125297728203,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          2.7940027940041907
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.2761398333860443,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.7076045364814558,
+          1.1430011430017144
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5857963084333858,
+          -0.508000508000762
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5857963084333858,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.3989413258055075,
+          2.7940027940041907
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.7872595585913782,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          2.305017202305872,
+          1.1430011430017144
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.2837710162665976,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.0537695633291784,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.1400625039482608,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          0.4497189789956021,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          3.3084657994221347,
+          -0.5426498381238446,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.9166989695200014,
+          -0.508000508000762
+        ],
+        [
+          -0.4879500364742666,
+          2.3452078799117144,
+          5.0,
+          -1.3460980771392068,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762
+        ]
+      ],
+      "dual_coefficients": [
+        7.1596135437092014,
+        -5.050256474207483,
+        -1.4961220233056167,
+        1.4669602142931704,
+        -0.989837671304319,
+        1.1727490368039593,
+        -1.7945082507445032,
+        -1.7787069103318747,
+        0.04652310610133432,
+        -0.6796958470556067,
+        -0.5240358017776895,
+        0.1951048617596701,
+        -2.433219171819112,
+        -0.4787958600035199,
+        1.2948075881197172,
+        1.288094591017785,
+        -2.1103459463557894,
+        -0.399590447167648,
+        -0.11836253272878292,
+        1.6988986607044192,
+        -0.7970768961767302,
+        -0.7970768961767134,
+        1.3001516143869254,
+        -0.7257329590444525,
+        2.2515667234273544,
+        -0.4254782186460398
+      ],
+      "intercept": 1.2972035517626728,
+      "alpha": 0.1,
+      "gamma": 1.0,
+      "feature_set": "manual_core",
+      "features": [
+        "aryl_rings",
+        "fused_aromatic",
+        "cyclic_center",
+        "alpha_chain_carbons",
+        "ortho_sub_count",
+        "hammett_sigma_mp",
+        "sidechain_polar_count"
+      ],
+      "mean": [
+        1.1923076923076923,
+        0.15384615384615385,
+        0.038461538461538464,
+        1.2692307692307692,
+        0.2692307692307692,
+        0.12576923076923077,
+        0.3076923076923077
+      ],
+      "scale": [
+        0.39411349099844606,
+        0.36080121229411,
+        0.19230769230769232,
+        0.9428962055485587,
+        0.5231334811052094,
+        0.23176866909988367,
+        0.605692913385524
+      ],
+      "target_transform": "yield_logit",
+      "selected_config": {
+        "algorithm": "rbf_kernel_ridge",
+        "feature_set": "manual_core",
+        "alpha": 0.1,
+        "gamma": 1.0
+      },
+      "selection_reason": "best fixed grouped-holdout model computable from the manual offline form",
+      "fixed_group_metrics": {
+        "mae": 7.316361484547997,
+        "rmse": 10.079551077230985,
+        "median_ae": 6.117790647851443,
+        "max_ae": 30.275319910590497,
+        "bias": 3.921397132052039,
+        "r2": -0.13851549209123415,
+        "spearman": 0.2865262718593152
+      },
+      "use_case": "offline manual-input fallback when generated structure descriptors are unavailable"
+    }
+  },
+  "descriptor_layers": {
+    "qmdesc": "ML-predicted B3LYP/def2-SVP targets; not direct quantum chemistry",
+    "dbstep": "ETKDGv3 conformer-ensemble product-scaffold proxy; not transition-state sterics",
+    "rdkit_discriminating": "2D topology for prediction only; excluded from authoritative gate distance"
+  },
+  "applicability": {
+    "metric": "standardized_euclidean_nearest_neighbor",
+    "features": [
+      "aryl_rings",
+      "fused_aromatic",
+      "cyclic_center",
+      "alpha_chain_carbons",
+      "ortho_sub_count",
+      "hammett_sigma_mp",
+      "sidechain_polar_count"
+    ],
+    "mean": [
+      1.1923076923076923,
+      0.15384615384615385,
+      0.038461538461538464,
+      1.2692307692307692,
+      0.2692307692307692,
+      0.12576923076923077,
+      0.3076923076923077
+    ],
+    "scale": [
+      0.39411349099844606,
+      0.36080121229411,
+      0.19230769230769232,
+      0.9428962055485587,
+      0.5231334811052094,
+      0.23176866909988367,
+      0.605692913385524
+    ],
+    "training_x": [
+      [
+        2.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        2.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.17,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.27,
+        1.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.01,
+        0.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        -0.01,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.45,
+        2.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.54,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.66,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.06,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.23,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.23,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.37,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.39,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.23,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.57,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "loo_distance_summary": {
+      "q50": 0.2772331595168179,
+      "q90": 0.7225010186897468,
+      "q95": 1.015942525431258,
+      "inside_q90_count": 24,
+      "inside_q95_count": 25,
+      "training_count": 26
+    },
+    "gate_config": {
+      "allowed_precursor_types": [
+        "secondary_benzylic_nhp_ether"
+      ],
+      "allowed_radical_classes": [
+        "carbon_aryl_benzylic"
+      ],
+      "allowed_reaction_families": [
+        "nhp_ether_deoxygenative_asymmetric_cyanation"
+      ],
+      "max_condition_changes": 1,
+      "distance_thresholds": {
+        "q50_typical": 0.2772331595168179,
+        "q90_warn": 0.7225010186897468,
+        "q95_refuse": 1.015942525431258
+      },
+      "high_risk_rules": [
+        {
+          "id": "strong_para_ewg_low_ee_warning",
+          "minimum": {
+            "hammett_sigma_mp": 0.6,
+            "para_sub_count": 1
+          },
+          "action": "WARN",
+          "grade": "D",
+          "interval_floor": {
+            "ee": 35.0
+          },
+          "message": "强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。",
+          "message_zh": "强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。",
+          "message_en": "The strong para electron-withdrawing region contains only 2n (41% ee); treat the point estimate as exploratory and extend the ee lower bound to 35%."
+        },
+        {
+          "id": "cyclic_benzylic_singleton_warning",
+          "minimum": {
+            "cyclic_center": 1
+          },
+          "action": "WARN",
+          "grade": "D",
+          "override_distance_refusal": true,
+          "message": "环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。",
+          "message_zh": "环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。",
+          "message_en": "The cyclic benzylic family contains only singleton 2z; retain it only as a grade-D boundary reference even beyond q95."
+        }
+      ]
+    }
+  },
+  "challenge_applicability": [
+    {
+      "id": "3a",
+      "radical_class": "heteroaryl",
+      "yield_pct": 50,
+      "ee_pct": 90,
+      "final_decision": "REFUSE",
+      "distance": null,
+      "reasons": "自由基类别不属于训练域中的碳-芳基仲苄基自由基。"
+    },
+    {
+      "id": "3b",
+      "radical_class": "heteroaryl",
+      "yield_pct": 54,
+      "ee_pct": 27,
+      "final_decision": "REFUSE",
+      "distance": null,
+      "reasons": "自由基类别不属于训练域中的碳-芳基仲苄基自由基。"
+    },
+    {
+      "id": "3c",
+      "radical_class": "alpha_carbonyl",
+      "yield_pct": 80,
+      "ee_pct": 60,
+      "final_decision": "REFUSE",
+      "distance": null,
+      "reasons": "自由基类别不属于训练域中的碳-芳基仲苄基自由基。"
+    },
+    {
+      "id": "3d",
+      "radical_class": "propargylic",
+      "yield_pct": 80,
+      "ee_pct": 19,
+      "final_decision": "REFUSE",
+      "distance": null,
+      "reasons": "自由基类别不属于训练域中的碳-芳基仲苄基自由基。"
+    }
+  ],
+  "governance": {
+    "architecture": "champion_challenger",
+    "promotion_rule": "Per target: nested grouped MAE improves by at least 0.30 percentage points, with non-worse nested RMSE and maximum absolute error.",
+    "minimum_mae_gain": 0.3,
+    "independent_external_validation_available": false
+  },
+  "champion_models": {
+    "yield": {
+      "algorithm": "ridge",
+      "coefficients": [
+        -0.024785969175339595,
+        -0.09258428446321526,
+        -0.11272363161123514,
+        -0.10899171469878503,
+        -0.037221630396345434,
+        -0.03790891361639524,
+        -0.03648431960722408
+      ],
+      "intercept": 1.2972035517626728,
+      "parameter": 30.0,
+      "feature_set": "physchem_compact",
+      "features": [
+        "mol_logp",
+        "mol_tpsa",
+        "mol_fraction_csp3",
+        "mol_rotatable_bonds",
+        "mol_bertz_complexity",
+        "mol_heteroatoms",
+        "nitrile_count"
+      ],
+      "mean": [
+        3.057214615384617,
+        27.438076923076917,
+        0.24621020005635388,
+        1.5769230769230769,
+        341.33601206144914,
+        2.0,
+        1.0384615384615385
+      ],
+      "scale": [
+        0.5594538128886263,
+        8.259516198920897,
+        0.07723278659695547,
+        1.214434877218996,
+        91.76546806910682,
+        0.7844645405527362,
+        0.19230769230769226
+      ],
+      "target_transform": "yield_logit",
+      "selected_config": {
+        "algorithm": "ridge",
+        "feature_set": "physchem_compact",
+        "alpha": 30.0
+      },
+      "selection_reason": "lowest grouped MAE; generated descriptors passed the predeclared >=1 point and non-worse RMSE rule",
+      "fixed_group_metrics": {
+        "mae": 5.807223985558486,
+        "rmse": 7.54364944041854,
+        "median_ae": 4.493608517621574,
+        "max_ae": 18.052043544286093,
+        "bias": 0.5600347790538015,
+        "r2": 0.36229538341571144,
+        "spearman": 0.2400436008192385
+      },
+      "nested_workflow_metrics": {
+        "mae": 8.02921634518887,
+        "rmse": 10.948383604117451,
+        "median_ae": 5.562129160875237,
+        "max_ae": 30.275319910590497,
+        "bias": 1.9593098326366094,
+        "r2": -0.3432491544825558,
+        "spearman": 0.015453450696517499
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.16596331205027,
+        "rmse": 10.123221948778248,
+        "median_ae": 7.53565217391305,
+        "max_ae": 29.13636363636364,
+        "bias": 0.033615587311238926,
+        "r2": -0.14840237540575152,
+        "spearman": -0.6784670817464411
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 20.964124242345378,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established."
+      }
+    },
+    "ee": {
+      "algorithm": "rbf_kernel_ridge",
+      "training_x_scaled": [
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          3.9567125297728203,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          2.7940027940041907,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.2761398333860443,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.7076045364814558,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.3989413258055075,
+          2.7940027940041907,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.7872595585913782,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          2.7968682325258656,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          2.305017202305872,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.2837710162665976,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.0537695633291784,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.1400625039482608,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          3.3084657994221347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.9166989695200014,
+          -0.508000508000762,
+          2.7688746209726913,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514
+        ],
+        [
+          -0.4879500364742666,
+          2.3452078799117144,
+          5.0,
+          -1.3460980771392068,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432
+        ]
+      ],
+      "dual_coefficients": [
+        0.23442371344555032,
+        0.2344237134455283,
+        -0.1455843979941329,
+        -0.08650669986364604,
+        0.9927223655891164,
+        -0.6954121769063466,
+        -0.6513880888639737,
+        0.7016619904742268,
+        -2.600420043197675,
+        2.573045066947631,
+        -1.1308440539793088,
+        3.5459376492080152,
+        -0.5329463441391465,
+        -5.9796778997305235,
+        -2.3847105807179907,
+        0.5569795286478902,
+        0.556979528647893,
+        0.3931836985017192,
+        0.46565358522189876,
+        1.2823626743167928,
+        2.3930524766494363,
+        -1.2122942532920264,
+        2.079444449953551,
+        0.08384294306427365,
+        -0.07680279631901374,
+        -0.8158564388083501
+      ],
+      "intercept": 1.5698923196941559,
+      "alpha": 0.1,
+      "gamma": 0.1,
+      "feature_set": "manual_expanded",
+      "features": [
+        "aryl_rings",
+        "fused_aromatic",
+        "cyclic_center",
+        "alpha_chain_carbons",
+        "ortho_sub_count",
+        "hammett_sigma_mp",
+        "sidechain_polar_count",
+        "meta_sub_count",
+        "para_sub_count",
+        "halogen_count",
+        "edg_count",
+        "ewg_count"
+      ],
+      "mean": [
+        1.1923076923076923,
+        0.15384615384615385,
+        0.038461538461538464,
+        1.2692307692307692,
+        0.2692307692307692,
+        0.12576923076923077,
+        0.3076923076923077,
+        0.11538461538461539,
+        0.46153846153846156,
+        0.7307692307692307,
+        0.11538461538461539,
+        0.5384615384615384
+      ],
+      "scale": [
+        0.39411349099844606,
+        0.36080121229411,
+        0.19230769230769232,
+        0.9428962055485587,
+        0.5231334811052094,
+        0.23176866909988367,
+        0.605692913385524,
+        0.31948553318915673,
+        0.4985185152621431,
+        0.8113470426818841,
+        0.31948553318915673,
+        0.49851851526214314
+      ],
+      "target_transform": "ee_to_ddg_kcal_mol",
+      "selected_config": {
+        "algorithm": "rbf_kernel_ridge",
+        "feature_set": "manual_expanded",
+        "alpha": 0.1,
+        "gamma": 0.1
+      },
+      "selection_reason": "manual deployable model retained because generated descriptors failed the predeclared material-improvement rule",
+      "fixed_group_metrics": {
+        "mae": 5.4195355665752,
+        "rmse": 10.247332522375872,
+        "median_ae": 3.038934676719478,
+        "max_ae": 42.750020243668956,
+        "bias": 2.6156900280249102,
+        "r2": 0.1879599969671436,
+        "spearman": 0.7160137114676709
+      },
+      "nested_workflow_metrics": {
+        "mae": 6.179707360841407,
+        "rmse": 10.993087684715332,
+        "median_ae": 3.574924711285732,
+        "max_ae": 45.20735289367137,
+        "bias": 2.669467894632831,
+        "r2": 0.0654659061677979,
+        "spearman": 0.6201928819486031
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.09775463666768,
+        "rmse": 12.03748852671726,
+        "median_ae": 6.083333333333329,
+        "max_ae": 45.30434782608695,
+        "bias": -0.05305107935542653,
+        "r2": -0.12054044912664019,
+        "spearman": -0.8294158808671818
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 23.112036434120867,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established."
+      }
+    }
+  },
+  "challenger_models": {
+    "yield": {
+      "algorithm": "knn",
+      "training_x_scaled": [
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          3.2510579801705513,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          1.452600374118757,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          2.04939015319192,
+          2.3452078799117144,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          3.2510579801705513,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          3.9567125297728203,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          1.1430011430017144,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          1.8355882870080096,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          2.7940027940041907,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.2761398333860443,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432,
+          -1.2028766741780612,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -1.7076045364814558,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          2.7688746209726913,
+          -1.0801234497346432,
+          -1.6541723960919081,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.4808035191159061,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          2.04939015319192,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5857963084333858,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.4808035191159061,
+          -0.34585723193303736,
+          2.345207879911715,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.15865148441430507,
+          1.3589991906407228,
+          0.5693106982690339
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.3989413258055075,
+          2.7940027940041907,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514,
+          1.5951568016877897,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.7872595585913782,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          2.7968682325258656,
+          -0.36115755925730764,
+          0.9258200997725514,
+          2.0013229514102515,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          2.305017202305872,
+          1.1430011430017144,
+          -0.36115755925730764,
+          1.0801234497346432,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          0.9258200997725514,
+          2.542877817706868,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          -0.2837710162665976,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.1648965137762133,
+          -0.34585723193303736,
+          2.345207879911715,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.15865148441430507,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          0.6023062134773264,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          2.0493901531919194,
+          -0.42640143271122094,
+          0.38232406899840715,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          0.6023062134773264,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          2.345207879911715,
+          1.5995190641770096,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.0537695633291784,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          2.0493901531919194,
+          -0.42640143271122094,
+          0.38232406899840715,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.1400625039482608,
+          -0.508000508000762,
+          2.7688746209726913,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          2.345207879911715,
+          1.5995190641770096,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          2.0493901531919194,
+          -0.42640143271122094,
+          0.38232406899840715,
+          1.7515989568258208,
+          1.5242834824622522
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          2.345207879911715,
+          1.5995190641770096,
+          1.8824655455541863,
+          3.672972246896993
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          0.3318318241979841,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          2.345207879911715,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.15865148441430507,
+          1.3589991906407228,
+          0.5693106982690339
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          1.3969077819782347,
+          0.4497189789956021,
+          -0.508000508000762,
+          -0.36115755925730764,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514,
+          0.6023062134773264,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          2.0493901531919194,
+          -0.42640143271122094,
+          1.5318971200004208,
+          1.7515989568258208,
+          1.5242834824622522
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          3.3084657994221347,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          2.0493901531919194,
+          -0.42640143271122094,
+          1.5318971200004208,
+          1.7515989568258208,
+          1.5242834824622522
+        ],
+        [
+          -0.4879500364742666,
+          -0.42640143271122083,
+          -0.2,
+          -0.2855359557568014,
+          -0.5146502354656654,
+          1.9166989695200014,
+          -0.508000508000762,
+          2.7688746209726913,
+          1.0801234497346432,
+          1.5643500283619247,
+          -0.36115755925730764,
+          0.9258200997725514,
+          2.136711667984405,
+          -0.34585723193303736,
+          2.345207879911715,
+          -0.4879500364742666,
+          2.345207879911715,
+          2.2081165617663108,
+          -0.6039996402847658,
+          -0.5050336839483366
+        ],
+        [
+          -0.4879500364742666,
+          2.3452078799117144,
+          5.0,
+          -1.3460980771392068,
+          -0.5146502354656654,
+          -0.5426498381238446,
+          -0.508000508000762,
+          -0.36115755925730764,
+          -0.9258200997725515,
+          -0.9006863799659567,
+          -0.36115755925730764,
+          -1.0801234497346432,
+          -0.43567394692452144,
+          -0.34585723193303736,
+          -0.42640143271122094,
+          -0.4879500364742666,
+          -0.42640143271122094,
+          -0.7672489820036064,
+          1.6207323680974548,
+          0.2111959041965771
+        ]
+      ],
+      "training_y": [
+        2.8543781552482583,
+        1.633391153456593,
+        0.8853071863541877,
+        1.7859957645113047,
+        0.4427365029053959,
+        1.0336543923933372,
+        0.0,
+        1.3077040865266694,
+        1.1386176232818088,
+        0.8378860262048569,
+        0.8378860262048569,
+        0.8853071863541877,
+        0.933682474586024,
+        0.8378860262048569,
+        1.7859957645113047,
+        1.7076763520175133,
+        1.3678322982801554,
+        1.3678322982801554,
+        1.3678322982801554,
+        1.9572739077056285,
+        1.7076763520175133,
+        1.7076763520175133,
+        2.0518915899116053,
+        1.0854542040905986,
+        1.3678322982801554,
+        0.8378860262048569
+      ],
+      "parameter": 2,
+      "knn_uses_target_transform": true,
+      "feature_set": "discriminating_2d",
+      "features": [
+        "aryl_rings",
+        "fused_aromatic",
+        "cyclic_center",
+        "alpha_chain_carbons",
+        "ortho_sub_count",
+        "hammett_sigma_mp",
+        "sidechain_polar_count",
+        "meta_sub_count",
+        "para_sub_count",
+        "halogen_count",
+        "edg_count",
+        "ewg_count",
+        "hammett_sigma_mp_x_para_sub_count",
+        "naphthyl_position",
+        "halogen_type_f",
+        "halogen_type_cl",
+        "halogen_type_br",
+        "aryl_halogen_atomic_number_sum",
+        "ortho_sub_vdw_radius",
+        "ortho_sub_atomic_number_max"
+      ],
+      "mean": [
+        1.1923076923076923,
+        0.15384615384615385,
+        0.038461538461538464,
+        1.2692307692307692,
+        0.2692307692307692,
+        0.12576923076923077,
+        0.3076923076923077,
+        0.11538461538461539,
+        0.46153846153846156,
+        0.7307692307692307,
+        0.11538461538461539,
+        0.5384615384615384,
+        0.09653846153846155,
+        0.19230769230769232,
+        0.15384615384615385,
+        0.19230769230769232,
+        0.15384615384615385,
+        11.346153846153847,
+        0.46153846153846156,
+        4.230769230769231
+      ],
+      "scale": [
+        0.39411349099844606,
+        0.36080121229411,
+        0.19230769230769232,
+        0.9428962055485587,
+        0.5231334811052094,
+        0.23176866909988367,
+        0.605692913385524,
+        0.31948553318915673,
+        0.4985185152621431,
+        0.8113470426818841,
+        0.31948553318915673,
+        0.49851851526214314,
+        0.2215841966680335,
+        0.5560320113384984,
+        0.36080121229410994,
+        0.3941134909984461,
+        0.36080121229410994,
+        14.788098925233264,
+        0.7641369808115474,
+        8.37720208619199
+      ],
+      "target_transform": "yield_logit",
+      "selected_config": {
+        "algorithm": "knn",
+        "feature_set": "discriminating_2d",
+        "k": 2,
+        "transformed": true
+      },
+      "selection_reason": "manual deployable model retained because generated descriptors failed the predeclared material-improvement rule",
+      "fixed_group_metrics": {
+        "mae": 7.233468392115987,
+        "rmse": 9.712303218089865,
+        "median_ae": 5.36526166659705,
+        "max_ae": 23.55404663859038,
+        "bias": 2.515701948997314,
+        "r2": -0.05706338520125076,
+        "spearman": 0.06183494655367522
+      },
+      "nested_workflow_metrics": {
+        "mae": 8.37607487838538,
+        "rmse": 10.915198822108866,
+        "median_ae": 6.179528140807037,
+        "max_ae": 28.642650035944357,
+        "bias": 3.2915790403915617,
+        "r2": -0.3351186619005493,
+        "spearman": -0.20120418664125087
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.16596331205027,
+        "rmse": 10.123221948778248,
+        "median_ae": 7.53565217391305,
+        "max_ae": 29.13636363636364,
+        "bias": 0.033615587311238926,
+        "r2": -0.14840237540575152,
+        "spearman": -0.6784670817464411
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 21.685958359110074,
+        "empirical_q80_half_width": 15.02500527429686,
+        "group_calibration": {
+          "alkyl_series": {
+            "n": 4,
+            "raw_half_width": 28.642650035944357,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.0
+          },
+          "biphenyl": {
+            "n": 2,
+            "raw_half_width": 15.476764510539539,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.28632323947823635
+          },
+          "cyclic_benzylic": {
+            "n": 1,
+            "raw_half_width": 15.02500527429686,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.3071551173580027
+          },
+          "meta_halogen": {
+            "n": 2,
+            "raw_half_width": 4.605636618107084,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.7876212551071188
+          },
+          "naphthyl": {
+            "n": 3,
+            "raw_half_width": 19.394156617865804,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.10568136779076243
+          },
+          "ortho_halogen": {
+            "n": 3,
+            "raw_half_width": 6.335481409884125,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.7078532889821469
+          },
+          "para_edg": {
+            "n": 2,
+            "raw_half_width": 7.756489076947233,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.6423266637100775
+          },
+          "para_ewg": {
+            "n": 3,
+            "raw_half_width": 12.748769076538665,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.4121187145421672
+          },
+          "para_halogen": {
+            "n": 3,
+            "raw_half_width": 6.826721855791035,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.6852008224518613
+          },
+          "polyhalogen": {
+            "n": 3,
+            "raw_half_width": 7.976425128270051,
+            "selected_half_width": 21.685958359110074,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.6321847992058314
+          }
+        },
+        "group_minimum_n": 4,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established."
+      }
+    },
+    "ee": {
+      "algorithm": "xgboost",
+      "base_score": 1.5698924,
+      "trees": [
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00704949675
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0144081218
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00713705877
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0134759918
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00808937754
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0129706431
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00599029195
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0123552093
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00488366093
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0125677753
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00519871106
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0106781414
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00773040717
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00597783085
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00664828345
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0120969499
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00680099288
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00939898472
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00590115413
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00756919151
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00744186714
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0108838258
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00672641024
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0105322162
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0103553189
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00735689467
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0065737078
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0098742377
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00557921408
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0102256332
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00313215074
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0053301747
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00516689522
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00934678502
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00461312151
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00899627805
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.004648217
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00620336179
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00139902066
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00673704082
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00667422218
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00537364278
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f12",
+          "split_condition": 0.0599999987,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00544784917
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.006360122
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00422552275
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00918683317
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00425414974
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0091360081
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": -0.00999999978,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00458846847
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00239085825
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00369872525
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00738523621
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0050621517
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00724170823
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00364038791
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00789263472
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00542001938
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00670020888
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00402414147
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00739341322
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00252608932
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00629804749
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00330585847
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00668517454
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0042921612
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00514018163
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00357725588
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00706007797
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00229839026
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0075016059
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00476543838
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00359208626
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00360336155
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00513697322
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0033124641
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00630655838
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00226761214
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00701433886
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0036128338
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00489016902
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00603142334
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00397403911
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f12",
+          "split_condition": 0.0599999987,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00334741338
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00470876461
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00250700884
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00340588926
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00199984899
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00449018227
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f12",
+          "split_condition": 0.0599999987,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.000992922112
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00439148163
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00261055748
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00643514609
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00291825528
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00522452779
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00323585724
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00624986691
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00485225581
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00248156465
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0045980881
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00146191509
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00217904709
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00366033474
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00243223808
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00484888582
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.000955613796
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00343502359
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00250604795
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00335575384
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00235756091
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00366975181
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0038057731
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00559258787
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0023438537
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00359369931
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00268673152
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00456051296
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0046286704
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00149153767
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00315567339
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00317373616
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00199237862
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00425514206
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00222757924
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00398630416
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0028641792
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00394210406
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00331709045
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00378765981
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00260520051
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00484436611
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0029727777
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00317365117
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00420531258
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00294269831
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00346541335
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00294428668
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00319539127
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00348053919
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00196829345
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00336452061
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00424568309
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f12",
+          "split_condition": 0.0599999987,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00198175991
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00300158467
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.000473449705
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00486784708
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00254461332
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00277649169
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00058294466
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00388682378
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00156758598
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00400623772
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0018426053
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00255960505
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00214062328
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00238076039
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.000734999136
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00282935798
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00235028658
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0024075415
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f0",
+          "split_condition": 2,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00272791856
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.0015652295
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00166563073
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00293608452
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0010726914
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0034207236
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00210932246
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.000845250324
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f11",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00181024615
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00219066977
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f0",
+          "split_condition": 2,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00292609329
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00149141904
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00175726286
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00374659896
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f4",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.0031652411
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00315248035
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00119102024
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.004097105
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00164269435
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00276739872
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00128269359
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00298796897
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f9",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00345878839
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00214255066
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.0037646573
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00285966136
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00162776548
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00252437545
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00249838736
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f0",
+          "split_condition": 2,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": -0.00461343583
+            },
+            {
+              "nodeid": 2,
+              "leaf": 0.00207755272
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f5",
+          "split_condition": 0.540000021,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.0037505792
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00221121218
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f8",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00250609964
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00359246181
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f10",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00146086677
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.000347155816
+            }
+          ]
+        },
+        {
+          "nodeid": 0,
+          "depth": 0,
+          "split": "f6",
+          "split_condition": 1,
+          "yes": 1,
+          "no": 2,
+          "missing": 2,
+          "children": [
+            {
+              "nodeid": 1,
+              "leaf": 0.00105727802
+            },
+            {
+              "nodeid": 2,
+              "leaf": -0.00372823328
+            }
+          ]
+        }
+      ],
+      "feature_importances": [
+        0.04894726350903511,
+        0.0,
+        0.0,
+        0.0,
+        0.20069490373134613,
+        0.06436476111412048,
+        0.21220669150352478,
+        0.0,
+        0.1084510087966919,
+        0.1656237542629242,
+        0.06837678700685501,
+        0.027552643790841103,
+        0.10378222912549973
+      ],
+      "max_depth": 1,
+      "learning_rate": 0.1,
+      "n_estimators": 100,
+      "feature_space": "raw",
+      "feature_set": "manual_expanded",
+      "features": [
+        "aryl_rings",
+        "fused_aromatic",
+        "cyclic_center",
+        "alpha_chain_carbons",
+        "ortho_sub_count",
+        "hammett_sigma_mp",
+        "sidechain_polar_count",
+        "meta_sub_count",
+        "para_sub_count",
+        "halogen_count",
+        "edg_count",
+        "ewg_count",
+        "hammett_sigma_mp_x_para_sub_count"
+      ],
+      "mean": [],
+      "scale": [],
+      "target_transform": "ee_to_ddg_kcal_mol",
+      "selected_config": {
+        "algorithm": "xgboost",
+        "feature_set": "manual_expanded",
+        "max_depth": 1,
+        "learning_rate": 0.1,
+        "n_estimators": 100
+      },
+      "selection_reason": "manual deployable model retained because generated descriptors failed the predeclared material-improvement rule",
+      "fixed_group_metrics": {
+        "mae": 5.740398514840091,
+        "rmse": 10.394323568960386,
+        "median_ae": 2.784539409804246,
+        "max_ae": 41.86611613671795,
+        "bias": 2.207153018312134,
+        "r2": 0.16449658391573752,
+        "spearman": 0.5248865705502056
+      },
+      "nested_workflow_metrics": {
+        "mae": 7.0227101611482246,
+        "rmse": 11.746217163592782,
+        "median_ae": 4.710038141267958,
+        "max_ae": 46.26751216593115,
+        "bias": 3.416295032283761,
+        "r2": -0.06696903924103603,
+        "spearman": 0.33310858797589565
+      },
+      "mean_baseline_metrics": {
+        "mae": 8.09775463666768,
+        "rmse": 12.03748852671726,
+        "median_ae": 6.083333333333329,
+        "max_ae": 45.30434782608695,
+        "bias": -0.05305107935542653,
+        "r2": -0.12054044912664019,
+        "spearman": -0.8294158808671818
+      },
+      "cross_conformal": {
+        "method": "nested_group_cross_conformal_empirical",
+        "nominal_coverage": 0.9,
+        "observed_internal_coverage": 0.9615384615384616,
+        "half_width": 25.499030230473835,
+        "empirical_q80_half_width": 9.222232706740655,
+        "group_calibration": {
+          "alkyl_series": {
+            "n": 4,
+            "raw_half_width": 9.222232706740655,
+            "selected_half_width": 9.222232706740655,
+            "source": "group",
+            "narrowing_fraction": 0.6383300610499616
+          },
+          "biphenyl": {
+            "n": 2,
+            "raw_half_width": 9.631276362218912,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.6222885233216204
+          },
+          "cyclic_benzylic": {
+            "n": 1,
+            "raw_half_width": 13.731635640570516,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.4614840048246278
+          },
+          "meta_halogen": {
+            "n": 2,
+            "raw_half_width": 1.7674535035539805,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.9306854618556551
+          },
+          "naphthyl": {
+            "n": 3,
+            "raw_half_width": 4.710038141267958,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.8152855971895354
+          },
+          "ortho_halogen": {
+            "n": 3,
+            "raw_half_width": 2.6788163339656137,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.89494438377644
+          },
+          "para_edg": {
+            "n": 2,
+            "raw_half_width": 25.499030230473835,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.0
+          },
+          "para_ewg": {
+            "n": 3,
+            "raw_half_width": 46.26751216593115,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.0
+          },
+          "para_halogen": {
+            "n": 3,
+            "raw_half_width": 10.560030727766943,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.5858653983182986
+          },
+          "polyhalogen": {
+            "n": 3,
+            "raw_half_width": 6.117506186189786,
+            "selected_half_width": 25.499030230473835,
+            "source": "global_fallback",
+            "narrowing_fraction": 0.7600886727496496
+          }
+        },
+        "group_minimum_n": 4,
+        "strict_split_conformal_guarantee": false,
+        "limitation": "Calibration reuses nested out-of-group residuals; independent prospective coverage is not established."
+      }
+    }
+  },
+  "production_model_version_by_target": {
+    "ee": "4.3.0",
+    "yield": "4.3.0"
+  },
+  "promotion_audit": [
+    {
+      "target": "ee",
+      "champion_version": "4.3.0",
+      "challenger_version": "4.4.0",
+      "champion_nested_mae": 6.179707360841407,
+      "challenger_nested_mae": 7.0227101611482246,
+      "mae_gain_champion_minus_challenger": -0.8430028003068175,
+      "champion_nested_rmse": 10.993087684715332,
+      "challenger_nested_rmse": 11.746217163592782,
+      "champion_nested_max_ae": 45.20735289367137,
+      "challenger_nested_max_ae": 46.26751216593115,
+      "promoted": false,
+      "production_source": "4.3.0_champion",
+      "reason": "challenger failed one or more predeclared non-regression criteria"
+    },
+    {
+      "target": "yield",
+      "champion_version": "4.3.0",
+      "challenger_version": "4.4.0",
+      "champion_nested_mae": 8.02921634518887,
+      "challenger_nested_mae": 8.37607487838538,
+      "mae_gain_champion_minus_challenger": -0.34685853319651017,
+      "champion_nested_rmse": 10.948383604117453,
+      "challenger_nested_rmse": 10.915198822108866,
+      "champion_nested_max_ae": 30.275319910590497,
+      "challenger_nested_max_ae": 28.64265003594436,
+      "promoted": false,
+      "production_source": "4.3.0_champion",
+      "reason": "challenger failed one or more predeclared non-regression criteria"
+    }
+  ],
+  "production_validation_metrics": {
+    "ee": {
+      "mae": 6.179707360841407,
+      "rmse": 10.993087684715332,
+      "median_ae": 3.574924711285732,
+      "max_ae": 45.20735289367137,
+      "bias": 2.669467894632831,
+      "r2": 0.0654659061677979,
+      "spearman": 0.6201928819486031
+    },
+    "yield": {
+      "mae": 8.02921634518887,
+      "rmse": 10.948383604117453,
+      "median_ae": 5.562129160875237,
+      "max_ae": 30.275319910590497,
+      "bias": 1.9593098326366092,
+      "r2": -0.3432491544825558,
+      "spearman": 0.0154534506965174
+    }
+  },
+  "research_only_descriptor_layers": {
+    "qmdesc": "Integrated and audited; not promoted into production because nested grouped gain was not stable.",
+    "dbstep": "Integrated and audited as a product-scaffold conformer proxy; not promoted into production.",
+    "xgboost": "Evaluated in the v4.4 challenger search; production promotion remains target-specific."
+  }
+}

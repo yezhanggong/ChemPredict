@@ -1,0 +1,157 @@
+﻿id,scope_group,observed,predicted,validation,target,selected_config,selection_reason
+2d,alkyl_series,86.0,82.69790938060783,fixed_selected_group_holdout,yield,,
+2e,alkyl_series,61.0,65.56631663071967,fixed_selected_group_holdout,yield,,
+2f,alkyl_series,74.0,70.81126819529217,fixed_selected_group_holdout,yield,,
+2g,alkyl_series,50.0,61.39724138839752,fixed_selected_group_holdout,yield,,
+2j,biphenyl,70.0,84.94525585056196,fixed_selected_group_holdout,yield,,
+2k,biphenyl,70.0,84.08291804762011,fixed_selected_group_holdout,yield,,
+2z,cyclic_benzylic,70.0,82.18280560216783,fixed_selected_group_holdout,yield,,
+2r,meta_halogen,80.0,81.511390109952,fixed_selected_group_holdout,yield,,
+2s,meta_halogen,80.0,81.44157722488913,fixed_selected_group_holdout,yield,,
+2a,naphthyl,95.0,76.9479564557139,fixed_selected_group_holdout,yield,,
+2b,naphthyl,84.0,77.07125613544139,fixed_selected_group_holdout,yield,,
+2c,naphthyl,71.0,70.83481408898226,fixed_selected_group_holdout,yield,,
+2t,ortho_halogen,88.0,80.33641942721015,fixed_selected_group_holdout,yield,,
+2u,ortho_halogen,85.0,80.28465461430748,fixed_selected_group_holdout,yield,,
+2v,ortho_halogen,85.0,80.57909959547652,fixed_selected_group_holdout,yield,,
+2h,para_edg,79.0,81.01227070448365,fixed_selected_group_holdout,yield,,
+2i,para_edg,76.0,77.0610226798741,fixed_selected_group_holdout,yield,,
+2l,para_ewg,71.0,72.0994330457957,fixed_selected_group_holdout,yield,,
+2m,para_ewg,72.0,78.81054588008426,fixed_selected_group_holdout,yield,,
+2n,para_ewg,70.0,76.79505540091505,fixed_selected_group_holdout,yield,,
+2o,para_halogen,86.0,81.15106530056924,fixed_selected_group_holdout,yield,,
+2p,para_halogen,85.0,80.92355052221583,fixed_selected_group_holdout,yield,,
+2q,para_halogen,80.0,80.87502671522651,fixed_selected_group_holdout,yield,,
+2w,polyhalogen,89.0,78.87324232292643,fixed_selected_group_holdout,yield,,
+2x,polyhalogen,75.0,78.99350465927223,fixed_selected_group_holdout,yield,,
+2y,polyhalogen,80.0,79.27530427669589,fixed_selected_group_holdout,yield,,
+2d,alkyl_series,86.0,84.10549531907267,nested_group_holdout,yield,knn|steric_hybrid|k=4|transformed=False,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2e,alkyl_series,61.0,86.47086850686595,nested_group_holdout,yield,knn|steric_hybrid|k=4|transformed=False,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2f,alkyl_series,74.0,86.45621708553945,nested_group_holdout,yield,knn|steric_hybrid|k=4|transformed=False,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2g,alkyl_series,50.0,86.39770477154306,nested_group_holdout,yield,knn|steric_hybrid|k=4|transformed=False,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2j,biphenyl,70.0,88.67835845423338,nested_group_holdout,yield,ridge|mechanism_hybrid|alpha=3.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2k,biphenyl,70.0,87.5638764714339,nested_group_holdout,yield,ridge|mechanism_hybrid|alpha=3.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2z,cyclic_benzylic,70.0,82.18280560216783,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2r,meta_halogen,80.0,81.511390109952,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2s,meta_halogen,80.0,81.44157722488913,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2a,naphthyl,95.0,74.03587575765462,nested_group_holdout,yield,ridge|physchem_compact|alpha=3.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2b,naphthyl,84.0,74.35044293182483,nested_group_holdout,yield,ridge|physchem_compact|alpha=3.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2c,naphthyl,71.0,62.12091848277464,nested_group_holdout,yield,ridge|physchem_compact|alpha=3.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2t,ortho_halogen,88.0,80.33641942721015,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2u,ortho_halogen,85.0,80.28465461430748,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2v,ortho_halogen,85.0,80.57909959547652,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2h,para_edg,79.0,81.01227070448365,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2i,para_edg,76.0,77.0610226798741,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2l,para_ewg,71.0,72.0994330457957,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2m,para_ewg,72.0,78.81054588008426,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2n,para_ewg,70.0,76.79505540091505,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2o,para_halogen,86.0,81.15106530056924,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2p,para_halogen,85.0,80.92355052221583,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2q,para_halogen,80.0,80.87502671522651,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2w,polyhalogen,89.0,78.87324232292643,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2x,polyhalogen,75.0,78.99350465927223,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2y,polyhalogen,80.0,79.27530427669589,nested_group_holdout,yield,ridge|physchem_compact|alpha=30.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2d,alkyl_series,86.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2e,alkyl_series,61.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2f,alkyl_series,74.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2g,alkyl_series,50.0,79.13636363636364,mean_baseline_group_holdout,yield,,
+2j,biphenyl,70.0,78.0,mean_baseline_group_holdout,yield,,
+2k,biphenyl,70.0,78.0,mean_baseline_group_holdout,yield,,
+2z,cyclic_benzylic,70.0,77.68,mean_baseline_group_holdout,yield,,
+2r,meta_halogen,80.0,77.16666666666667,mean_baseline_group_holdout,yield,,
+2s,meta_halogen,80.0,77.16666666666667,mean_baseline_group_holdout,yield,,
+2a,naphthyl,95.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2b,naphthyl,84.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2c,naphthyl,71.0,76.6086956521739,mean_baseline_group_holdout,yield,,
+2t,ortho_halogen,88.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2u,ortho_halogen,85.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2v,ortho_halogen,85.0,76.26086956521739,mean_baseline_group_holdout,yield,,
+2h,para_edg,79.0,77.375,mean_baseline_group_holdout,yield,,
+2i,para_edg,76.0,77.375,mean_baseline_group_holdout,yield,,
+2l,para_ewg,71.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2m,para_ewg,72.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2n,para_ewg,70.0,78.21739130434783,mean_baseline_group_holdout,yield,,
+2o,para_halogen,86.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2p,para_halogen,85.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2q,para_halogen,80.0,76.56521739130434,mean_baseline_group_holdout,yield,,
+2w,polyhalogen,89.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2x,polyhalogen,75.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2y,polyhalogen,80.0,76.8695652173913,mean_baseline_group_holdout,yield,,
+2d,alkyl_series,87.0,86.01084572652542,fixed_selected_group_holdout,ee,,
+2e,alkyl_series,91.0,91.16817392151215,fixed_selected_group_holdout,ee,,
+2f,alkyl_series,85.0,88.1224567768924,fixed_selected_group_holdout,ee,,
+2g,alkyl_series,80.0,80.37298319265696,fixed_selected_group_holdout,ee,,
+2j,biphenyl,92.0,87.44282900080198,fixed_selected_group_holdout,ee,,
+2k,biphenyl,90.0,93.34129569545752,fixed_selected_group_holdout,ee,,
+2z,cyclic_benzylic,75.0,84.38975397474302,fixed_selected_group_holdout,ee,,
+2r,meta_halogen,90.0,87.67151478320208,fixed_selected_group_holdout,ee,,
+2s,meta_halogen,90.0,87.96792814112655,fixed_selected_group_holdout,ee,,
+2a,naphthyl,90.0,90.35354594565416,fixed_selected_group_holdout,ee,,
+2b,naphthyl,90.0,90.60825036860051,fixed_selected_group_holdout,ee,,
+2c,naphthyl,80.0,88.93996417346389,fixed_selected_group_holdout,ee,,
+2t,ortho_halogen,94.0,89.83894043122146,fixed_selected_group_holdout,ee,,
+2u,ortho_halogen,95.0,89.88769169636629,fixed_selected_group_holdout,ee,,
+2v,ortho_halogen,91.0,89.42223529519069,fixed_selected_group_holdout,ee,,
+2h,para_edg,79.0,85.84060677192956,fixed_selected_group_holdout,ee,,
+2i,para_edg,60.0,84.19810870927066,fixed_selected_group_holdout,ee,,
+2l,para_ewg,84.0,75.6514097254855,fixed_selected_group_holdout,ee,,
+2m,para_ewg,84.0,87.49876611396891,fixed_selected_group_holdout,ee,,
+2n,para_ewg,41.0,80.32538213069142,fixed_selected_group_holdout,ee,,
+2o,para_halogen,80.0,82.72640900056284,fixed_selected_group_holdout,ee,,
+2p,para_halogen,86.0,84.83125167762765,fixed_selected_group_holdout,ee,,
+2q,para_halogen,86.0,85.13186469632547,fixed_selected_group_holdout,ee,,
+2w,polyhalogen,93.0,91.08367945307437,fixed_selected_group_holdout,ee,,
+2x,polyhalogen,95.0,95.19666528392504,fixed_selected_group_holdout,ee,,
+2y,polyhalogen,86.0,87.90961100864735,fixed_selected_group_holdout,ee,,
+2d,alkyl_series,87.0,86.63322011446422,nested_group_holdout,ee,knn|interaction_hybrid|k=2|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2e,alkyl_series,91.0,93.66836084068203,nested_group_holdout,ee,knn|interaction_hybrid|k=2|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2f,alkyl_series,85.0,94.52252451424133,nested_group_holdout,ee,knn|interaction_hybrid|k=2|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2g,alkyl_series,80.0,74.51278771099753,nested_group_holdout,ee,knn|interaction_hybrid|k=2|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2j,biphenyl,92.0,82.36872363778109,nested_group_holdout,ee,xgboost|manual_expanded|max_depth=1|learning_rate=0.1|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2k,biphenyl,90.0,90.02262642651209,nested_group_holdout,ee,xgboost|manual_expanded|max_depth=1|learning_rate=0.1|n_estimators=100,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2z,cyclic_benzylic,75.0,88.73163564057052,nested_group_holdout,ee,ridge|discriminating_2d|alpha=10.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2r,meta_halogen,90.0,87.67151478320208,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=10.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2s,meta_halogen,90.0,87.96792814112655,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=10.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2a,naphthyl,90.0,92.91758581005423,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=1.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2b,naphthyl,90.0,92.47015234395465,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=1.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2c,naphthyl,80.0,91.46234454878432,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=1.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2t,ortho_halogen,94.0,88.38498762806307,nested_group_holdout,ee,xgboost|physchem_compact|max_depth=2|learning_rate=0.1|n_estimators=100,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2u,ortho_halogen,95.0,88.38498762806307,nested_group_holdout,ee,xgboost|physchem_compact|max_depth=2|learning_rate=0.1|n_estimators=100,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2v,ortho_halogen,91.0,82.09164834176215,nested_group_holdout,ee,xgboost|physchem_compact|max_depth=2|learning_rate=0.1|n_estimators=100,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2h,para_edg,79.0,83.20590324456921,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=1.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2i,para_edg,60.0,80.86492052667506,nested_group_holdout,ee,ridge|mechanism_hybrid|alpha=1.0,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2l,para_ewg,84.0,79.51753034492673,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2m,para_ewg,84.0,89.43256250546754,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2n,para_ewg,41.0,87.26751216593115,nested_group_holdout,ee,ridge|discriminating_2d|alpha=1.0,lowest grouped MAE among all candidates; feature set is available in the offline manual UI
+2o,para_halogen,80.0,90.56003072776694,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2p,para_halogen,86.0,91.61172722412249,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2q,para_halogen,86.0,87.6760588359608,nested_group_holdout,ee,knn|discriminating_2d|k=2|transformed=True,manual deployable model retained because generated descriptors failed the predeclared material-improvement rule
+2w,polyhalogen,93.0,93.25237735587935,nested_group_holdout,ee,knn|mechanism_hybrid|k=3|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2x,polyhalogen,95.0,93.49480417527762,nested_group_holdout,ee,knn|mechanism_hybrid|k=3|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2y,polyhalogen,86.0,88.83803809060056,nested_group_holdout,ee,knn|mechanism_hybrid|k=3|transformed=True,"lowest grouped MAE; generated descriptors passed the predeclared >=0.5 point rule or the >=0.3 point plus >=0.05 Spearman rule, with non-worse RMSE"
+2d,alkyl_series,87.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2e,alkyl_series,91.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2f,alkyl_series,85.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2g,alkyl_series,80.0,84.13636363636364,mean_baseline_group_holdout,ee,,
+2j,biphenyl,92.0,83.83333333333333,mean_baseline_group_holdout,ee,,
+2k,biphenyl,90.0,83.83333333333333,mean_baseline_group_holdout,ee,,
+2z,cyclic_benzylic,75.0,84.76,mean_baseline_group_holdout,ee,,
+2r,meta_halogen,90.0,83.91666666666667,mean_baseline_group_holdout,ee,,
+2s,meta_halogen,90.0,83.91666666666667,mean_baseline_group_holdout,ee,,
+2a,naphthyl,90.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2b,naphthyl,90.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2c,naphthyl,80.0,84.08695652173913,mean_baseline_group_holdout,ee,,
+2t,ortho_halogen,94.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2u,ortho_halogen,95.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2v,ortho_halogen,91.0,83.21739130434783,mean_baseline_group_holdout,ee,,
+2h,para_edg,79.0,85.625,mean_baseline_group_holdout,ee,,
+2i,para_edg,60.0,85.625,mean_baseline_group_holdout,ee,,
+2l,para_ewg,84.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2m,para_ewg,84.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2n,para_ewg,41.0,86.30434782608695,mean_baseline_group_holdout,ee,,
+2o,para_halogen,80.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2p,para_halogen,86.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2q,para_halogen,86.0,84.43478260869566,mean_baseline_group_holdout,ee,,
+2w,polyhalogen,93.0,83.47826086956522,mean_baseline_group_holdout,ee,,
+2x,polyhalogen,95.0,83.47826086956522,mean_baseline_group_holdout,ee,,
+2y,polyhalogen,86.0,83.47826086956522,mean_baseline_group_holdout,ee,,

@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "scope row count",
+      "pass": true,
+      "detail": "observed=30 expected=30"
+    },
+    {
+      "check": "scope identifiers unique",
+      "pass": true,
+      "detail": "30"
+    },
+    {
+      "check": "condition identifiers unique",
+      "pass": true,
+      "detail": "33"
+    },
+    {
+      "check": "numeric outcomes bounded",
+      "pass": true,
+      "detail": "yield and ee must be in [0,100]"
+    },
+    {
+      "check": "scope transcription fixture",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "check": "PubChem records resolved",
+      "pass": true,
+      "detail": "unresolved=[]"
+    },
+    {
+      "check": "RDKit structures present",
+      "pass": true,
+      "detail": "rows=30"
+    },
+    {
+      "check": "RDKit/PubChem formula cross-check",
+      "pass": true,
+      "detail": "registered=27 mismatches=[]"
+    },
+    {
+      "check": "artifact training count",
+      "pass": true,
+      "detail": "26"
+    },
+    {
+      "check": "artifact challenge count",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "check": "artifact version",
+      "pass": true,
+      "detail": "4.4.0"
+    },
+    {
+      "check": "mechanism proxies complete and honestly labelled",
+      "pass": true,
+      "detail": "rows=30 semantics=['2D_empirical_proxies_not_quantum_chemistry']"
+    },
+    {
+      "check": "condition vectors complete",
+      "pass": true,
+      "detail": "rows=33 columns=64"
+    },
+    {
+      "check": "qmdesc predictions complete and honestly labelled",
+      "pass": true,
+      "detail": "rows=30 semantics=['ml_predicted_b3lyp_def2svp_targets_not_direct_quantum_chemistry']"
+    },
+    {
+      "check": "DBSTEP conformer proxies complete and ligand gap explicit",
+      "pass": true,
+      "detail": "rows=30 ligand_status=['not_computed_l1_structure_not_machine_readable_in_source_data']"
+    },
+    {
+      "check": "reaction-system registry prevents numerical pooling",
+      "pass": true,
+      "detail": "systems=9 quantitative=['nhp_deoxygenative_asymmetric_cyanation']"
+    },
+    {
+      "check": "bilingual chemical dictionary covers condition identities",
+      "pass": true,
+      "detail": "missing=[] terms=38"
+    },
+    {
+      "check": "champion-challenger promotion audit complete",
+      "pass": true,
+      "detail": "[{\"target\":\"ee\",\"champion_version\":\"4.3.0\",\"challenger_version\":\"4.4.0\",\"champion_nested_mae\":6.1797073608,\"challenger_nested_mae\":7.0227101611,\"mae_gain_champion_minus_challenger\":-0.8430028003,\"champion_nested_rmse\":10.9930876847,\"challenger_nested_rmse\":11.7462171636,\"champion_nested_max_ae\":45.2073528937,\"challenger_nested_max_ae\":46.2675121659,\"promoted\":false,\"production_source\":\"4.3.0_champion\",\"reason\":\"challenger failed one or more predeclared non-regression criteria\"},{\"target\":\"yield\",\"champion_version\":\"4.3.0\",\"challenger_version\":\"4.4.0\",\"champion_nested_mae\":8.0292163452,\"challenger_nested_mae\":8.3760748784,\"mae_gain_champion_minus_challenger\":-0.3468585332,\"champion_nested_rmse\":10.9483836041,\"challenger_nested_rmse\":10.9151988221,\"champion_nested_max_ae\":30.2753199106,\"challenger_nested_max_ae\":28.6426500359,\"promoted\":false,\"production_source\":\"4.3.0_champion\",\"reason\":\"challenger failed one or more predeclared non-regression criteria\"}]"
+    },
+    {
+      "check": "only nonconstant numeric model features retained",
+      "pass": true,
+      "detail": "active=alpha_chain_carbons;aryl_rings;cyclic_center;edg_count;ewg_count;fused_aromatic;halogen_count;hammett_sigma_mp;meta_sub_count;mol_bertz_complexity;mol_fraction_csp3;mol_heteroatoms;mol_logp;mol_rotatable_bonds;mol_tpsa;nitrile_count;ortho_sub_count;para_sub_count;sidechain_polar_count"
+    },
+    {
+      "check": "all challenge classes refused",
+      "pass": true,
+      "detail": "[{\"id\": \"3a\", \"radical_class\": \"heteroaryl\", \"yield_pct\": 50, \"ee_pct\": 90, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3b\", \"radical_class\": \"heteroaryl\", \"yield_pct\": 54, \"ee_pct\": 27, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3c\", \"radical_class\": \"alpha_carbonyl\", \"yield_pct\": 80, \"ee_pct\": 60, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3d\", \"radical_class\": \"propargylic\", \"yield_pct\": 80, \"ee_pct\": 19, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}]"
+    },
+    {
+      "check": "structured four-part gate present",
+      "pass": true,
+      "detail": "{\"allowed_precursor_types\": [\"secondary_benzylic_nhp_ether\"], \"allowed_radical_classes\": [\"carbon_aryl_benzylic\"], \"allowed_reaction_families\": [\"nhp_ether_deoxygenative_asymmetric_cyanation\"], \"max_condition_changes\": 1, \"distance_thresholds\": {\"q50_typical\": 0.2772331595168179, \"q90_warn\": 0.7225010186897468, \"q95_refuse\": 1.015942525431258}, \"high_risk_rules\": [{\"id\": \"strong_para_ewg_low_ee_warning\", \"minimum\": {\"hammett_sigma_mp\": 0.6, \"para_sub_count\": 1}, \"action\": \"WARN\", \"grade\": \"D\", \"interval_floor\": {\"ee\": 35.0}, \"message\": \"强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。\", \"message_zh\": \"强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。\", \"message_en\": \"The strong para electron-withdrawing region contains only 2n (41% ee); treat the point estimate as exploratory and extend the ee lower bound to 35%.\"}, {\"id\": \"cyclic_benzylic_singleton_warning\", \"minimum\": {\"cyclic_center\": 1}, \"action\": \"WARN\", \"grade\": \"D\", \"override_distance_refusal\": true, \"message\": \"环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。\", \"message_zh\": \"环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。\", \"message_en\": \"The cyclic benzylic family contains only singleton 2z; retain it only as a grade-D boundary reference even beyond q95.\"}]}"
+    },
+    {
+      "check": "training-domain q90 calibration",
+      "pass": true,
+      "detail": "inside_q90=24/26"
+    },
+    {
+      "check": "group-aware interval fallback policy present",
+      "pass": true,
+      "detail": "group minimum n must be 4 for both production targets"
+    },
+    {
+      "check": "external gate stress tests",
+      "pass": true,
+      "detail": "external_refused=11/11 controls=1"
+    },
+    {
+      "check": "nested grouped metrics present",
+      "pass": true,
+      "detail": "[{\"target\":\"yield\",\"mae\":8.0292163452,\"rmse\":10.9483836041,\"max_ae\":30.2753199106},{\"target\":\"ee\",\"mae\":6.1797073608,\"rmse\":10.9930876847,\"max_ae\":45.2073528937}]"
+    },
+    {
+      "check": "literature corpus human-screened",
+      "pass": true,
+      "detail": "rows=44 pending=0"
+    },
+    {
+      "check": "reference manifest nonempty",
+      "pass": true,
+      "detail": "files=10"
+    }
+  ],
+  "reference_manifest": [
+    {
+      "file": "方法学_Nature2026_Transferable_enantioselectivity_models.pdf",
+      "bytes": 2464570,
+      "sha256": "e2fe023847361697888c125692054b23e3363545723ee7bf5b5a68234672d2aa"
+    },
+    {
+      "file": "最新旁证_NatureCatalysis2026_SI.pdf",
+      "bytes": 27319660,
+      "sha256": "e8c9f886065b03ae8c3ff8ead75c8a083eaca6e26b9b7d40efc07b63122605bd"
+    },
+    {
+      "file": "最新机理旁证_JACS2026_ja6c05474_SI.pdf",
+      "bytes": 19596325,
+      "sha256": "433102e213e5bb2be35fc3f9b68bedeb0fcc94b162d7add2437b65f6778a080b"
+    },
+    {
+      "file": "机理旁证_JACS2025_ja5c03680_SI.pdf",
+      "bytes": 4088782,
+      "sha256": "ad16c673285668002b37e67ad74cee01e929aef12207337dba83a956c96d7d34"
+    },
+    {
+      "file": "目标论文_OrgLett2026.pdf",
+      "bytes": 1964798,
+      "sha256": "82b9258792dd205867e0c7443ed1bf3237ddb813710d6c7d904a654ea2f66c4e"
+    },
+    {
+      "file": "目标论文_SI_ol5c05116_si_001.pdf",
+      "bytes": 11226222,
+      "sha256": "49a977d45567a9f293cefb9d80ddea4573987840841ee6f9a7458a3a3782ba6a"
+    },
+    {
+      "file": "相关体系_ACSCatal2025_cs5c04002_SI.pdf",
+      "bytes": 13608207,
+      "sha256": "21dafb1bafcff6f595ebab1c6d6656711be4fd5b3b6a4ec0259a73ad3f8ca538"
+    },
+    {
+      "file": "相关体系_NatureCommunications2025_SI.pdf",
+      "bytes": 12579140,
+      "sha256": "5f18d7cf1473c11d4399aaee7c91f3b8ede8155edf5580cb5a9a0c214edcad25"
+    },
+    {
+      "file": "相关体系_OrgLett2024_ol4c03914_SI.pdf",
+      "bytes": 10581195,
+      "sha256": "6f377145bc92e83e7b48f68ab678ea5c476769af331f67431ebb264c77027fd7"
+    },
+    {
+      "file": "背景_Kharasch_photoinduced_copper_catalysis.pdf",
+      "bytes": 2481230,
+      "sha256": "28d08b5b9a7997803ebbecc86746e930ae5082f3748db9a5ad39ee9f6de6e5d1"
+    }
+  ]
+}

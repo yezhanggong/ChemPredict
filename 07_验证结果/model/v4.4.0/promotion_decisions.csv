@@ -1,0 +1,3 @@
+﻿target,champion_version,challenger_version,champion_nested_mae,challenger_nested_mae,mae_gain_champion_minus_challenger,champion_nested_rmse,challenger_nested_rmse,champion_nested_max_ae,challenger_nested_max_ae,promoted,production_source,reason
+ee,4.3.0,4.4.0,6.179707360841407,7.0227101611482246,-0.8430028003068175,10.993087684715332,11.746217163592782,45.20735289367137,46.26751216593115,False,4.3.0_champion,challenger failed one or more predeclared non-regression criteria
+yield,4.3.0,4.4.0,8.02921634518887,8.37607487838538,-0.34685853319651017,10.948383604117453,10.915198822108866,30.275319910590497,28.64265003594436,False,4.3.0_champion,challenger failed one or more predeclared non-regression criteria

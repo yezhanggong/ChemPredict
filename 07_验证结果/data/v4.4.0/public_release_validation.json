@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "scope row count",
+      "pass": true,
+      "detail": "observed=30 expected=30"
+    },
+    {
+      "check": "scope identifiers unique",
+      "pass": true,
+      "detail": "30"
+    },
+    {
+      "check": "condition identifiers unique",
+      "pass": true,
+      "detail": "33"
+    },
+    {
+      "check": "numeric outcomes bounded",
+      "pass": true,
+      "detail": "yield and ee must be in [0,100]"
+    },
+    {
+      "check": "scope transcription fixture",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "check": "PubChem records resolved",
+      "pass": true,
+      "detail": "unresolved=[]"
+    },
+    {
+      "check": "RDKit structures present",
+      "pass": true,
+      "detail": "rows=30"
+    },
+    {
+      "check": "RDKit/PubChem formula cross-check",
+      "pass": true,
+      "detail": "registered=27 mismatches=[]"
+    },
+    {
+      "check": "artifact training count",
+      "pass": true,
+      "detail": "26"
+    },
+    {
+      "check": "artifact challenge count",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "check": "artifact version",
+      "pass": true,
+      "detail": "4.4.0"
+    },
+    {
+      "check": "mechanism proxies complete and honestly labelled",
+      "pass": true,
+      "detail": "rows=30 semantics=['2D_empirical_proxies_not_quantum_chemistry']"
+    },
+    {
+      "check": "condition vectors complete",
+      "pass": true,
+      "detail": "rows=33 columns=64"
+    },
+    {
+      "check": "qmdesc predictions complete and honestly labelled",
+      "pass": true,
+      "detail": "rows=30 semantics=['ml_predicted_b3lyp_def2svp_targets_not_direct_quantum_chemistry']"
+    },
+    {
+      "check": "DBSTEP conformer proxies complete and ligand gap explicit",
+      "pass": true,
+      "detail": "rows=30 ligand_status=['not_computed_l1_structure_not_machine_readable_in_source_data']"
+    },
+    {
+      "check": "reaction-system registry prevents numerical pooling",
+      "pass": true,
+      "detail": "systems=9 quantitative=['nhp_deoxygenative_asymmetric_cyanation']"
+    },
+    {
+      "check": "bilingual chemical dictionary covers condition identities",
+      "pass": true,
+      "detail": "missing=[] terms=38"
+    },
+    {
+      "check": "champion-challenger promotion audit complete",
+      "pass": true,
+      "detail": "[{\"target\":\"ee\",\"champion_version\":\"4.3.0\",\"challenger_version\":\"4.4.0\",\"champion_nested_mae\":6.1797073608,\"challenger_nested_mae\":7.0227101611,\"mae_gain_champion_minus_challenger\":-0.8430028003,\"champion_nested_rmse\":10.9930876847,\"challenger_nested_rmse\":11.7462171636,\"champion_nested_max_ae\":45.2073528937,\"challenger_nested_max_ae\":46.2675121659,\"promoted\":false,\"production_source\":\"4.3.0_champion\",\"reason\":\"challenger failed one or more predeclared non-regression criteria\"},{\"target\":\"yield\",\"champion_version\":\"4.3.0\",\"challenger_version\":\"4.4.0\",\"champion_nested_mae\":8.0292163452,\"challenger_nested_mae\":8.3760748784,\"mae_gain_champion_minus_challenger\":-0.3468585332,\"champion_nested_rmse\":10.9483836041,\"challenger_nested_rmse\":10.9151988221,\"champion_nested_max_ae\":30.2753199106,\"challenger_nested_max_ae\":28.6426500359,\"promoted\":false,\"production_source\":\"4.3.0_champion\",\"reason\":\"challenger failed one or more predeclared non-regression criteria\"}]"
+    },
+    {
+      "check": "only nonconstant numeric model features retained",
+      "pass": true,
+      "detail": "active=alpha_chain_carbons;aryl_rings;cyclic_center;edg_count;ewg_count;fused_aromatic;halogen_count;hammett_sigma_mp;meta_sub_count;mol_bertz_complexity;mol_fraction_csp3;mol_heteroatoms;mol_logp;mol_rotatable_bonds;mol_tpsa;nitrile_count;ortho_sub_count;para_sub_count;sidechain_polar_count"
+    },
+    {
+      "check": "all challenge classes refused",
+      "pass": true,
+      "detail": "[{\"id\": \"3a\", \"radical_class\": \"heteroaryl\", \"yield_pct\": 50, \"ee_pct\": 90, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3b\", \"radical_class\": \"heteroaryl\", \"yield_pct\": 54, \"ee_pct\": 27, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3c\", \"radical_class\": \"alpha_carbonyl\", \"yield_pct\": 80, \"ee_pct\": 60, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}, {\"id\": \"3d\", \"radical_class\": \"propargylic\", \"yield_pct\": 80, \"ee_pct\": 19, \"final_decision\": \"REFUSE\", \"distance\": null, \"reasons\": \"自由基类别不属于训练域中的碳-芳基仲苄基自由基。\"}]"
+    },
+    {
+      "check": "structured four-part gate present",
+      "pass": true,
+      "detail": "{\"allowed_precursor_types\": [\"secondary_benzylic_nhp_ether\"], \"allowed_radical_classes\": [\"carbon_aryl_benzylic\"], \"allowed_reaction_families\": [\"nhp_ether_deoxygenative_asymmetric_cyanation\"], \"max_condition_changes\": 1, \"distance_thresholds\": {\"q50_typical\": 0.2772331595168179, \"q90_warn\": 0.7225010186897468, \"q95_refuse\": 1.015942525431258}, \"high_risk_rules\": [{\"id\": \"strong_para_ewg_low_ee_warning\", \"minimum\": {\"hammett_sigma_mp\": 0.6, \"para_sub_count\": 1}, \"action\": \"WARN\", \"grade\": \"D\", \"interval_floor\": {\"ee\": 35.0}, \"message\": \"强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。\", \"message_zh\": \"强对位吸电子区域仅有 2n 且其 ee 为 41%；点预测仅作探索，ee 区间下界扩展至 35%。\", \"message_en\": \"The strong para electron-withdrawing region contains only 2n (41% ee); treat the point estimate as exploratory and extend the ee lower bound to 35%.\"}, {\"id\": \"cyclic_benzylic_singleton_warning\", \"minimum\": {\"cyclic_center\": 1}, \"action\": \"WARN\", \"grade\": \"D\", \"override_distance_refusal\": true, \"message\": \"环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。\", \"message_zh\": \"环状苄基家族仅有 2z 单例；即使距离超过 q95 也只作 D 级边界参考。\", \"message_en\": \"The cyclic benzylic family contains only singleton 2z; retain it only as a grade-D boundary reference even beyond q95.\"}]}"
+    },
+    {
+      "check": "training-domain q90 calibration",
+      "pass": true,
+      "detail": "inside_q90=24/26"
+    },
+    {
+      "check": "group-aware interval fallback policy present",
+      "pass": true,
+      "detail": "group minimum n must be 4 for both production targets"
+    },
+    {
+      "check": "external gate stress tests",
+      "pass": true,
+      "detail": "external_refused=11/11 controls=1"
+    },
+    {
+      "check": "nested grouped metrics present",
+      "pass": true,
+      "detail": "[{\"target\":\"yield\",\"mae\":8.0292163452,\"rmse\":10.9483836041,\"max_ae\":30.2753199106},{\"target\":\"ee\",\"mae\":6.1797073608,\"rmse\":10.9930876847,\"max_ae\":45.2073528937}]"
+    },
+    {
+      "check": "literature corpus human-screened",
+      "pass": true,
+      "detail": "rows=44 pending=0"
+    },
+    {
+      "check": "public release uses DOI registry instead of source PDFs",
+      "pass": true,
+      "detail": "source-document manifest intentionally omitted"
+    }
+  ],
+  "reference_manifest": []
+}

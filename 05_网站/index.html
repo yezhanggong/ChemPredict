@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f766e">
+  <title>ChemPredict v4.4 | 多反应体系证据与预测工作台</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles-v44.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">CP</span>
+      <div><h1>ChemPredict <span>v4.4.0</span></h1><p data-i18n="subtitle">多反应体系证据与预测工作台</p></div>
+    </div>
+    <div class="top-actions">
+      <span class="model-state"><i></i><span data-i18n="offline">完全离线</span></span>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" class="is-active" data-language="zh">中文</button>
+        <button type="button" data-language="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="system-bar" aria-labelledby="system-heading">
+    <div class="system-select-block">
+      <label id="system-heading" for="system-selector" data-i18n="reactionSystem">反应体系</label>
+      <select id="system-selector"></select>
+    </div>
+    <div id="system-summary" class="system-summary" aria-live="polite"></div>
+  </section>
+
+  <nav class="primary-tabs" aria-label="Main navigation">
+    <button type="button" class="is-active" data-page="workspace" data-i18n="workspace">预测工作台</button>
+    <button type="button" data-page="systems" data-i18n="systemEvidence">体系证据</button>
+    <button type="button" data-page="audit" data-i18n="audit">模型审计</button>
+    <button type="button" data-page="planner"><span data-i18n="planner">实验计划</span> <b id="plan-count">0</b></button>
+  </nav>
+
+  <main>
+    <section id="workspace" class="page is-active">
+      <div id="system-boundary" class="boundary-panel" hidden></div>
+      <div id="quantitative-workspace">
+        <div class="workspace-heading">
+          <div><p class="eyebrow" data-i18n="activeModel">当前定量模型</p><h2 data-i18n="targetTitle">NHP 醚脱氧不对称氰化</h2></div>
+          <span class="source-badge" data-i18n="championBadge">v4.3 生产冠军 + v4.4 门控</span>
+        </div>
+
+        <div class="mode-tabs" role="group" aria-label="Prediction mode">
+          <button type="button" class="is-active" data-mode="conditions" data-i18n="conditionMode">条件证据</button>
+          <button type="button" data-mode="literature" data-i18n="literatureMode">文献复现</button>
+          <button type="button" data-mode="virtual" data-i18n="virtualMode">候选库</button>
+          <button type="button" data-mode="custom" data-i18n="customMode">新底物估计</button>
+        </div>
+
+        <section id="mode-conditions" class="mode-panel is-active">
+          <div class="work-grid">
+            <form id="condition-form" class="controls">
+              <label for="condition-axis" data-i18n="screenAxis">筛选维度</label>
+              <select id="condition-axis"></select>
+              <label for="condition-candidate" data-i18n="candidateCondition">候选条件</label>
+              <select id="condition-candidate"></select>
+              <div class="button-row">
+                <button type="submit" class="primary" data-i18n="readEvidence">读取实验结果</button>
+                <button type="button" id="add-condition" class="secondary" data-i18n="addPlan">加入计划</button>
+              </div>
+              <p class="form-note" data-i18n="conditionBoundary">只返回论文实测的一次单因素变化；不学习任意溶剂/催化剂组合。</p>
+            </form>
+            <article id="condition-result" class="result" aria-live="polite"></article>
+          </div>
+          <div class="data-table-block">
+            <div class="table-heading"><h3 data-i18n="sameAxisRanking">同维度证据排序</h3><span data-i18n="censorNote">trace/n.d. 保留为删失结果</span></div>
+            <div class="table-scroll"><table><thead><tr>
+              <th data-i18n="candidate">候选</th><th data-i18n="yield">产率</th><th>ee</th><th data-i18n="deltaAnchor">相对锚点</th><th data-i18n="source">来源</th>
+            </tr></thead><tbody id="condition-table-body"></tbody></table></div>
+          </div>
+        </section>
+
+        <section id="mode-literature" class="mode-panel">
+          <div class="work-grid">
+            <form id="literature-form" class="controls">
+              <label for="literature-substrate" data-i18n="paperSubstrate">论文底物</label>
+              <select id="literature-substrate"></select>
+              <div class="button-row">
+                <button type="submit" class="primary" data-i18n="readObservation">读取原始观测</button>
+                <button type="button" id="add-literature" class="secondary" data-i18n="addPlan">加入计划</button>
+              </div>
+              <div id="fixed-condition" class="condition-stack"></div>
+            </form>
+            <article id="literature-result" class="result" aria-live="polite"></article>
+          </div>
+        </section>
+
+        <section id="mode-virtual" class="mode-panel">
+          <div class="work-grid">
+            <form id="virtual-form" class="controls">
+              <label for="virtual-candidate" data-i18n="precomputedCandidate">预计算候选</label>
+              <select id="virtual-candidate"></select>
+              <div class="button-row">
+                <button type="submit" class="primary" data-i18n="screenCandidate">读取候选结果</button>
+                <button type="button" id="add-virtual" class="secondary" data-i18n="addPlan">加入计划</button>
+              </div>
+              <p class="form-note" data-i18n="virtualNote">候选结构描述符已离线预计算；结果是排序依据，不是实验保证。</p>
+            </form>
+            <article id="virtual-result" class="result" aria-live="polite"></article>
+          </div>
+        </section>
+
+        <section id="mode-custom" class="mode-panel">
+          <div class="work-grid wide-controls">
+            <form id="custom-form" class="controls">
+              <div class="field-grid">
+                <div><label for="precursor-type" data-i18n="precursor">前体类型</label><select id="precursor-type"></select></div>
+                <div><label for="radical-class" data-i18n="radical">自由基类型</label><select id="radical-class"></select></div>
+                <div><label for="aryl-template" data-i18n="arylTemplate">芳基模板</label><select id="aryl-template"></select></div>
+                <div><label for="substituent-template" data-i18n="substituent">芳环取代</label><select id="substituent-template"></select></div>
+                <div><label for="sidechain-template" data-i18n="sidechain">另一取代基</label><select id="sidechain-template"></select></div>
+                <div><label for="scope-group" data-i18n="familyAssignment">校准家族</label><select id="scope-group"></select></div>
+              </div>
+              <details>
+                <summary data-i18n="advancedDescriptors">高级描述符</summary>
+                <div class="descriptor-grid">
+                  <label><span data-i18n="orthoCount">邻位数</span><input id="f-ortho" type="number" min="0" max="2" step="1"></label>
+                  <label><span data-i18n="metaCount">间位数</span><input id="f-meta" type="number" min="0" max="2" step="1"></label>
+                  <label><span data-i18n="paraCount">对位数</span><input id="f-para" type="number" min="0" max="2" step="1"></label>
+                  <label>Σσ<sub>m/p</sub><input id="f-sigma" type="number" min="-0.6" max="1.5" step="0.01"></label>
+                  <label><span data-i18n="halogenCount">卤素数</span><input id="f-halogen" type="number" min="0" max="4" step="1"></label>
+                  <label><span data-i18n="edgCount">给电子基数</span><input id="f-edg" type="number" min="0" max="3" step="1"></label>
+                  <label><span data-i18n="ewgCount">吸电子基数</span><input id="f-ewg" type="number" min="0" max="3" step="1"></label>
+                  <label><span data-i18n="polarCount">侧链极性基数</span><input id="f-polar" type="number" min="0" max="3" step="1"></label>
+                </div>
+              </details>
+              <div class="button-row">
+                <button type="submit" class="primary" data-i18n="calculate">检查适用域并计算</button>
+                <button type="button" id="add-custom" class="secondary" disabled data-i18n="addPlan">加入计划</button>
+              </div>
+              <p class="form-note" data-i18n="customNote">结果按家族/全局区间分层显示；只有同体系固定协议可输出数值。</p>
+            </form>
+            <article id="custom-result" class="result" aria-live="polite"></article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="systems" class="page">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="transferGuard">跨体系迁移防护</p><h2 data-i18n="registeredSystems">已注册反应体系</h2></div><span class="source-badge" data-i18n="oneQuantitative">1 个定量体系</span></div>
+      <div id="system-grid" class="system-grid"></div>
+    </section>
+
+    <section id="audit" class="page">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="traceability">可追溯性</p><h2 data-i18n="validationTitle">验证、晋级与描述符语义</h2></div><span class="source-badge pass">PASS</span></div>
+      <div id="metric-cards" class="metric-grid"></div>
+      <div class="audit-grid">
+        <article><h3 data-i18n="promotionTitle">冠军-挑战者决策</h3><div id="promotion-table" class="table-scroll"></div></article>
+        <article><h3 data-i18n="openTools">开源工具状态</h3><div id="tool-status"></div></article>
+        <article><h3 data-i18n="validationDesign">验证设计</h3><dl id="validation-design" class="definition-list"></dl></article>
+        <article><h3 data-i18n="modelFeatures">生产模型特征</h3><div id="model-features"></div></article>
+      </div>
+      <div class="audit-warning" data-i18n="auditWarning">尚无独立前瞻盲测。内部区间只能辅助排序，不能替代实验重复、风险评估或放大决策。</div>
+    </section>
+
+    <section id="planner" class="page">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="prospective">前瞻检验</p><h2 data-i18n="planTitle">实验计划与盲测记录</h2></div><div class="button-row"><button id="export-plan" class="secondary" data-i18n="exportCsv">导出 CSV</button><button id="clear-plan" class="text-button" data-i18n="clear">清空</button></div></div>
+      <div class="safety-banner" data-i18n="safety">TMSCN（三甲基氰硅烷）及氰化物具有急性毒性；工具不替代机构 SOP、导师审批、通风监测和废物处置要求。</div>
+      <div class="data-table-block"><div class="table-scroll"><table><thead><tr>
+        <th>#</th><th data-i18n="subject">底物/用途</th><th data-i18n="condition">条件</th><th data-i18n="expected">预期</th><th data-i18n="evidenceLevel">证据级别</th><th></th>
+      </tr></thead><tbody id="plan-table-body"></tbody></table></div><div id="plan-empty" class="empty-state" data-i18n="emptyPlan">尚未加入候选。</div></div>
+    </section>
+  </main>
+
+  <footer><span data-i18n="footerClaim">ChemPredict v4.4 · 证据检索与候选排序，不是实验保证</span><span data-i18n="auditDate">审计日期：2026-07-18</span></footer>
+
+  <script src="assets/registries.js"></script>
+  <script src="assets/model_artifact.js"></script>
+  <script src="model-v44.js"></script>
+  <script src="app-v44.js"></script>
+</body>
+</html>

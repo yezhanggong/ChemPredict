@@ -1,0 +1,54 @@
+name: Model validation or data correction
+description: Submit a prospective result, external validation, transcription correction, or applicability-domain discrepancy.
+title: "[Validation]: "
+labels: [validation]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Frozen model version and artifact
+      placeholder: v4.4.0, artifact filename/hash, and prediction date
+    validations:
+      required: true
+  - type: dropdown
+    id: validation_type
+    attributes:
+      label: Record type
+      options:
+        - Prospective blind experiment
+        - Literature transcription correction
+        - External applicability test
+        - Python/JavaScript parity discrepancy
+        - Other validation
+    validations:
+      required: true
+  - type: textarea
+    id: reaction
+    attributes:
+      label: Reaction identity and protocol
+      description: State precursor type, radical class, reaction family, structure identifier, and all changed condition factors.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Prediction and experimental evidence
+      description: Separate predicted yield/ee from isolated or assay measurements and include the analytical method.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance and redistribution permission
+      description: Provide DOI/source-page information or explain the experiment and confirm that the record may be shared.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Submission checks
+      options:
+        - label: This submission contains no confidential or personally identifying data.
+          required: true
+        - label: I understand that submitted data will be reviewed before any training use.
+          required: true

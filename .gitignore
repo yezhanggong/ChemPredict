@@ -1,0 +1,37 @@
+# Source publications and local experiment records are not redistributed.
+02_文献原文/
+references/
+private-data/
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+
+# Local environments, caches, generated packages, and Android binaries.
+.venv/
+venv/
+04_模型源码/.venv-*/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+node_modules/
+tmp/
+dist/
+build/
+*.apk
+*.aab
+*.idsig
+*.zip
+
+# Local test output and server logs.
+07_验证结果/browser/local-run/
+*.log
+
+# Editors and operating systems.
+.idea/
+.vscode/
+~$*
+.DS_Store
+Thumbs.db

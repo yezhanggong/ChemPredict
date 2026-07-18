@@ -1,0 +1,9 @@
+numpy==2.3.5
+pandas==3.0.1
+rdkit==2025.9.6
+xgboost==3.3.0
+scikit-learn==1.9.0
+dbstep==1.1.0
+qmdesc==1.0.6
+torch==2.13.0
+setuptools==80.9.0

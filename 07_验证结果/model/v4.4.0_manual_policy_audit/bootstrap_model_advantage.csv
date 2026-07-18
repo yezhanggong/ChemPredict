@@ -1,0 +1,3 @@
+﻿target,delta_definition,observed_delta,bootstrap_ci95_low,bootstrap_ci95_high,probability_model_better,iterations,resampling_unit
+yield,model_MAE_minus_mean_baseline_MAE; negative favors model,0.21011156633510986,-1.7072883153740674,2.534459865287617,0.4119,10000,scope_group
+ee,model_MAE_minus_mean_baseline_MAE; negative favors model,-1.075044475519456,-3.661099047915605,1.1612466969076514,0.7985,10000,scope_group

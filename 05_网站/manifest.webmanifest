@@ -1,0 +1,12 @@
+{
+  "name": "ChemPredict v4.4 多反应体系证据与预测工作台",
+  "short_name": "ChemPredict 4.4",
+  "start_url": "./index-v44.html",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#0f766e",
+  "description": "具有反应体系注册、双语术语、冠军-挑战者治理和分组适用域门控的离线研究决策工具。",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

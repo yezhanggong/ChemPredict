@@ -1,0 +1,5 @@
+﻿id,radical_class,yield_pct,ee_pct,final_decision,distance,reasons
+3a,heteroaryl,50,90,REFUSE,,自由基类别不属于训练域中的碳-芳基仲苄基自由基。
+3b,heteroaryl,54,27,REFUSE,,自由基类别不属于训练域中的碳-芳基仲苄基自由基。
+3c,alpha_carbonyl,80,60,REFUSE,,自由基类别不属于训练域中的碳-芳基仲苄基自由基。
+3d,propargylic,80,19,REFUSE,,自由基类别不属于训练域中的碳-芳基仲苄基自由基。

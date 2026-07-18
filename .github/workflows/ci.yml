@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "agent/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "11.9.0"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+
+      - name: Install minimal dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-ci.txt
+          pnpm install --frozen-lockfile
+          pnpm exec playwright install --with-deps chromium
+
+      - name: Audit public repository and curated data
+        run: python "04_模型源码/tools/validate_public_release.py" --root .
+
+      - name: Run Python and cross-runtime tests
+        run: python -m unittest discover -s "04_模型源码/tests" -p "test_*.py" -v
+
+      - name: Run bilingual browser acceptance test
+        run: |
+          python -m http.server 8788 --bind 127.0.0.1 --directory "05_网站" > /tmp/chempredict-http.log 2>&1 &
+          for attempt in {1..20}; do
+            curl --fail --silent http://127.0.0.1:8788/index.html >/dev/null && break
+            sleep 1
+          done
+          CHEMPREDICT_BASE_URL=http://127.0.0.1:8788 pnpm test:ui
+
+      - name: Upload browser evidence on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-test-evidence
+          path: 07_验证结果/browser/local-run
+          if-no-files-found: ignore

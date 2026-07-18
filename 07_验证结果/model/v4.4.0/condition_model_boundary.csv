@@ -1,0 +1,2 @@
+﻿model_version,scope_model_uses_condition_descriptors,condition_screen_is_evidence_only,reason,permitted_use
+4.4.0,False,True,"All 26 quantitative scope rows use one optimized protocol, so condition effects are not identifiable without paired condition data.",Exact literature lookup and one-factor condition evidence display; no learned solvent/catalyst counterfactual.

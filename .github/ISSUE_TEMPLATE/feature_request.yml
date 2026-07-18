@@ -1,0 +1,26 @@
+name: Feature or research proposal
+description: Propose a scoped interface, descriptor, model, or reaction-system improvement.
+title: "[Proposal]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Scientific or user problem
+      description: Describe the current limitation and who is affected.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Include the mechanism assumption, data requirement, and expected output.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Acceptance criteria
+      description: Explain how the change can be tested without leakage or unsupported cross-system pooling.
+    validations:
+      required: true

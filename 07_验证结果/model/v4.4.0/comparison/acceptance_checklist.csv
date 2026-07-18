@@ -1,0 +1,14 @@
+﻿criterion,pass,detail
+qmdesc rows complete,True,rows=30
+qmdesc is not mislabeled as direct DFT,True,ml_predicted_b3lyp_def2svp_targets_not_direct_quantum_chemistry
+DBSTEP rows complete,True,rows=30
+L1 ligand structure gap explicit,True,not_computed_l1_structure_not_machine_readable_in_source_data
+descriptor diagnostic zero distances <=2,True,zero_count=0; authoritative gate unchanged
+external gate 12/12 matches expected,True,matched=12/12
+production yield nested MAE <=7.97,False,observed=8.029
+production yield nested R2 >0,False,observed=-0.343
+production yield max AE <=27,False,observed=30.275
+v4.4 ee challenger improves >=0.5,False,champion=6.180; challenger=7.023
+2n nested ee error <=30,False,observed=46.268
+2n risk-adjusted lower bound <=35,True,predeclared D-grade interval floor=35
+challenger non-regression promotion,False,failed challengers retained for audit; production champion preserved

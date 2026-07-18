@@ -1,0 +1,40 @@
+﻿trace_assumption_pct,screen_axis,record_id,candidate,yield_used_for_sensitivity,rank,original_status
+0.0,solvent,SOLV-04,CHCl3,55.0,1,measured
+0.0,solvent,SOLV-03,DCE,55.0,1,measured
+0.0,solvent,SOLV-02,DCM,50.0,3,measured
+0.0,solvent,SOLV-01,CH3CN,40.0,4,measured
+0.0,solvent,SOLV-05,PhCl,0.0,5,trace
+0.0,solvent,SOLV-06,acetone,0.0,5,trace
+0.0,solvent,SOLV-07,MTBE,0.0,5,trace
+0.0,photocatalyst,PC-01,fac-Ir(ppy)3,50.0,1,measured
+0.0,photocatalyst,PC-02,[Ir(dFCF3ppy)2(bpy)]PF6,0.0,2,trace
+0.0,photocatalyst,PC-03,4CzIPN,0.0,2,trace
+0.0,photocatalyst,PC-04,Eosin Y,0.0,2,not_detected
+0.0,photocatalyst,PC-05,"5,7,12,14-Pentacenetetrone",0.0,2,not_detected
+0.0,photocatalyst,PC-06,"9,10-Diphenylanthracene",0.0,2,not_detected
+2.0,solvent,SOLV-04,CHCl3,55.0,1,measured
+2.0,solvent,SOLV-03,DCE,55.0,1,measured
+2.0,solvent,SOLV-02,DCM,50.0,3,measured
+2.0,solvent,SOLV-01,CH3CN,40.0,4,measured
+2.0,solvent,SOLV-05,PhCl,2.0,5,trace
+2.0,solvent,SOLV-06,acetone,2.0,5,trace
+2.0,solvent,SOLV-07,MTBE,2.0,5,trace
+2.0,photocatalyst,PC-01,fac-Ir(ppy)3,50.0,1,measured
+2.0,photocatalyst,PC-02,[Ir(dFCF3ppy)2(bpy)]PF6,2.0,2,trace
+2.0,photocatalyst,PC-03,4CzIPN,2.0,2,trace
+2.0,photocatalyst,PC-04,Eosin Y,2.0,2,not_detected
+2.0,photocatalyst,PC-05,"5,7,12,14-Pentacenetetrone",2.0,2,not_detected
+2.0,photocatalyst,PC-06,"9,10-Diphenylanthracene",2.0,2,not_detected
+5.0,solvent,SOLV-04,CHCl3,55.0,1,measured
+5.0,solvent,SOLV-03,DCE,55.0,1,measured
+5.0,solvent,SOLV-02,DCM,50.0,3,measured
+5.0,solvent,SOLV-01,CH3CN,40.0,4,measured
+5.0,solvent,SOLV-05,PhCl,5.0,5,trace
+5.0,solvent,SOLV-06,acetone,5.0,5,trace
+5.0,solvent,SOLV-07,MTBE,5.0,5,trace
+5.0,photocatalyst,PC-01,fac-Ir(ppy)3,50.0,1,measured
+5.0,photocatalyst,PC-02,[Ir(dFCF3ppy)2(bpy)]PF6,5.0,2,trace
+5.0,photocatalyst,PC-03,4CzIPN,5.0,2,trace
+5.0,photocatalyst,PC-04,Eosin Y,5.0,2,not_detected
+5.0,photocatalyst,PC-05,"5,7,12,14-Pentacenetetrone",5.0,2,not_detected
+5.0,photocatalyst,PC-06,"9,10-Diphenylanthracene",5.0,2,not_detected

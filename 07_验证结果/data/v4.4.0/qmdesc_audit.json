@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rows": 30,
+  "qmdesc_version": "1.0.6",
+  "torch_version": "2.13.0+cpu",
+  "semantics": "ml_predicted_b3lyp_def2svp_targets_not_direct_quantum_chemistry",
+  "missing_numeric_values": 0,
+  "field_correction": "The requested HOMO/LUMO and Mulliken fields are not qmdesc outputs. The pipeline uses the package's documented Hirshfeld charge, Fukui, NMR, bond-order and bond-length targets."
+}

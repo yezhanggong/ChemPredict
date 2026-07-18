@@ -1,0 +1,39 @@
+﻿key,category,en,zh
+DCM,solvent,DCM,二氯甲烷
+DCE,solvent,DCE,"1,2-二氯乙烷"
+CH3CN,solvent,CH3CN,乙腈
+CHCl3,solvent,CHCl3,氯仿（三氯甲烷）
+PhCl,solvent,PhCl,氯苯
+acetone,solvent,acetone,丙酮
+MTBE,solvent,MTBE,甲基叔丁基醚
+fac-Ir(ppy)3,photocatalyst,fac-Ir(ppy)3,面式三(2-苯基吡啶)合铱(III)
+[Ir(dFCF3ppy)2(bpy)]PF6,photocatalyst,[Ir(dFCF3ppy)2(bpy)]PF6,六氟磷酸双(二氟三氟甲基苯基吡啶)(联吡啶)合铱(III)
+4CzIPN,photocatalyst,4CzIPN,"2,4,5,6-四(9H-咔唑-9-基)间苯二腈"
+Eosin Y,photocatalyst,Eosin Y,曙红 Y
+"5,7,12,14-Pentacenetetrone",photocatalyst,"5,7,12,14-pentacenetetrone","5,7,12,14-并五苯四酮"
+"9,10-Diphenylanthracene",photocatalyst,"9,10-diphenylanthracene","9,10-二苯基蒽"
+none,generic,none,无
+Cu(CH3CN)4PF6,copper_source,Cu(CH3CN)4PF6,六氟磷酸四(乙腈)合铜(I)
+Cu(CH3CN)4BF4,copper_source,Cu(CH3CN)4BF4,四氟硼酸四(乙腈)合铜(I)
+CuCN,copper_source,CuCN,氰化亚铜
+CuCl,copper_source,CuCl,氯化亚铜
+CuBr,copper_source,CuBr,溴化亚铜
+CuCl2,copper_source,CuCl2,氯化铜(II)
+CuBr2,copper_source,CuBr2,溴化铜(II)
+L1,ligand,L1,手性配体 L1（原文编号，结构见 SI）
+L2,ligand,L2,手性配体 L2（原文编号，结构见 SI）
+L3,ligand,L3,手性配体 L3（原文编号，结构见 SI）
+L4,ligand,L4,手性配体 L4（原文编号，结构见 SI）
+L5,ligand,L5,手性配体 L5（原文编号，结构见 SI）
+L6,ligand,L6,手性配体 L6（原文编号，结构见 SI）
+NHP ether,reactant,NHP ether,N-羟基邻苯二甲酰亚胺醚
+P(OEt)3,reagent,P(OEt)3,亚磷酸三乙酯
+TMSCN,reagent,TMSCN,三甲基氰硅烷
+N2,atmosphere,N2,氮气
+HPLC,analysis,HPLC,高效液相色谱
+ee,endpoint,ee,对映体过量
+yield,endpoint,yield,分离产率
+qmdesc,software,qmdesc,机器学习量子描述符预测器
+DBSTEP,software,DBSTEP,分子立体参数计算工具
+XGBoost,software,XGBoost,极端梯度提升树
+RDKit,software,RDKit,开源化学信息学工具包
