@@ -52,7 +52,7 @@ v4.4.0 使用预声明的冠军-挑战者规则。qmdesc、DBSTEP、结构分化
 
 ## 快速复现
 
-最小测试环境只需要 Python 3.12、Node.js 20+：
+最小测试环境只需要 Python 3.12、Node.js 22.13+：
 
 ```bash
 python -m venv .venv
