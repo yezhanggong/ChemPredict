@@ -2,10 +2,18 @@ cff-version: 1.2.0
 message: "If you use ChemPredict, cite this software release and the original experimental article listed in the data card."
 title: "ChemPredict: an applicability-aware evidence and ranking tool for asymmetric radical cyanation"
 type: software
-version: 4.4.0
+version: 4.5.0
+doi: 10.5281/zenodo.21438579
 date-released: 2026-07-19
 authors:
   - name: "ChemPredict Contributors"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21438579
+    description: "Concept DOI — all versions"
+  - type: doi
+    value: 10.5281/zenodo.21438580
+    description: "Version DOI — v4.5.0"
 repository-code: "https://github.com/yezhanggong/ChemPredict"
 url: "https://yezhanggong.github.io/ChemPredict/"
 license: Apache-2.0
@@ -17,11 +25,15 @@ keywords:
   - uncertainty calibration
 preferred-citation:
   type: software
-  title: "ChemPredict v4.4.0"
-  version: 4.4.0
+  title: "ChemPredict v4.5.0"
+  version: 4.5.0
+  doi: 10.5281/zenodo.21438580
   date-released: 2026-07-19
   authors:
     - name: "ChemPredict Contributors"
+  identifiers:
+    - type: doi
+      value: 10.5281/zenodo.21438580
   repository-code: "https://github.com/yezhanggong/ChemPredict"
   license: Apache-2.0
 references:
