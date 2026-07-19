@@ -5,6 +5,7 @@
 [![CI](https://github.com/yezhanggong/ChemPredict/actions/workflows/ci.yml/badge.svg)](https://github.com/yezhanggong/ChemPredict/actions/workflows/ci.yml)
 [![Pages](https://github.com/yezhanggong/ChemPredict/actions/workflows/pages.yml/badge.svg)](https://yezhanggong.github.io/ChemPredict/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1305146685.svg)](https://doi.org/10.5281/zenodo.21438579)
 
 ChemPredict 是面向不对称自由基氰化研究的离线证据检索、适用域判断与候选排序工具。v4.4.0 以 Yu 等人在 *Organic Letters* 2026 报道的 NHP 醚脱氧不对称氰化为唯一可定量体系；另外 8 个相关体系仅用于证据检索或跨体系拒绝，不进行数值合并。
 
