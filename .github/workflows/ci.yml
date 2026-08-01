@@ -59,7 +59,7 @@ jobs:
 
       - name: Upload browser evidence on failure
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: browser-test-evidence
           path: 07_验证结果/browser/local-run
